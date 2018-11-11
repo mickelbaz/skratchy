@@ -59,7 +59,7 @@ export default {
 }
 
 .items .illustration .thumbnail {
-    background-image: url(/img/dragon.64716d4d.jpg);
+    background-image: url("../assets/illustrations/dragon.jpg");
     background-size: 101%;
     background-position: 0px -11px;
     background-repeat: no-repeat;

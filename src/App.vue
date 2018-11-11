@@ -30,5 +30,14 @@ export default {
   margin-left: auto;
 }
 
+a{
+  color: #2c3e50;
+}
+
+button{
+  color: #2c3e50;
+  font-family: 'Work Sans', sans-serif;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
 </style>
