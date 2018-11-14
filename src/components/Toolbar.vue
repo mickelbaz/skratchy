@@ -1,5 +1,5 @@
 <template>
-<div class="navbar">
+<div class="navbar" >
     <div class="logo">
         <router-link to="/">
             <img src="../assets/logo.png" alt="">

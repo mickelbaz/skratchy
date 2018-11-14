@@ -1,6 +1,6 @@
 <template>
 <div class="homepage-content">
-    <h1>{{ name }}</h1>
+    <h1 class="name-title">{{ name }}</h1>
     <div class="items">
         <ul>
             <li :key="JSON.stringify(homepageItem)" v-for="homepageItem in homepageItems" :class="homepageItem.name">
@@ -41,6 +41,11 @@ export default {
 </script>
 
 <style scoped>
+h1.name-title{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 54px;
+}
 .homepage-content{
     padding-top: 20px;
 }
@@ -59,7 +64,7 @@ export default {
 }
 
 .items .illustration .thumbnail {
-    background-image: url("../assets/illustrations/dragon.jpg");
+    background-image: url("../assets/illustrations/dragon-high.jpg");
     background-size: 101%;
     background-position: 0px -11px;
     background-repeat: no-repeat;

@@ -22,7 +22,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: black;
   margin-top: 112px;
   padding-right: 25px;
   padding-left: 25px;
@@ -31,13 +31,13 @@ export default {
 }
 
 a{
-  color: #2c3e50;
+  color: black;
 }
 
 button{
-  color: #2c3e50;
+  color: black;
   font-family: 'Work Sans', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,700');
 </style>
