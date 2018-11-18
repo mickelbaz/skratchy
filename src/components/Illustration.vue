@@ -1,15 +1,7 @@
 <template>
 <div class="illustration">
     <div class="illustration-content">
-        <img src="../assets/illustrations/electric_animals/lizard.jpg" alt="">
-        <img src="../assets/illustrations/electric_animals/ornithorhynchus.jpg" alt="">
-        <img src="../assets/illustrations/electric_animals/bee.jpg" alt="">
-        <img src="../assets/illustrations/electric_animals/leg.jpg" alt="" class="two-lines">
-        <img src="../assets/illustrations/electric_animals/morray.jpg" alt="">
-        <img src="../assets/illustrations/electric_animals/elephant-fish.jpg" alt="">
-        <img src="../assets/illustrations/electric_animals/jelly-fish.jpg" alt="" class="two-lines">
-        <img src="../assets/illustrations/electric_animals/hornet.jpg" alt="">
-        <img src="../assets/illustrations/electric_animals/gecko.jpg" alt="">
+        <img :key="JSON.stringify(illustration)" v-for="illustration in illustrations" :src="illustration.url">
     </div>
 </div>
     
@@ -19,10 +11,45 @@
 export default {
     data() {
         return {
-            illustrations: {
-                name: "lizard",
-                url: '../assets/illustrations/electric_animals/lizard.jpg'
-            }
+            illustrations: [
+                {
+                    name: "lizard",
+                    url: require('../assets/illustrations/electric_animals/lizard.jpg')
+                },
+                {
+                    name: "ornithorhynchus",
+                    url: require('../assets/illustrations/electric_animals/ornithorhynchus.jpg')
+                },
+                {
+                    name: "bee",
+                    url: require('../assets/illustrations/electric_animals/bee.jpg')
+                },
+                {
+                    name: "leg",
+                    url: require('../assets/illustrations/electric_animals/leg.jpg')
+                },
+                {
+                    name: "morray",
+                    url: require('../assets/illustrations/electric_animals/morray.jpg')
+                },
+                {
+                    name: "elephant-fish",
+                    url: require('../assets/illustrations/electric_animals/elephant-fish.jpg')
+                },
+                {
+                    name: "jelly-fish",
+                    url: require('../assets/illustrations/electric_animals/jelly-fish.jpg')
+                },
+                {
+                    name: "hornet",
+                    url: require('../assets/illustrations/electric_animals/hornet.jpg')
+                },
+                {
+                    name: "gecko",
+                    url: require('../assets/illustrations/electric_animals/gecko.jpg')
+                }
+            ]
+
         }
     }
 }

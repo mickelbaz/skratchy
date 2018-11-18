@@ -45,6 +45,7 @@ h1.name-title{
     font-weight: 700;
     text-transform: uppercase;
     font-size: 54px;
+    margin-top: 0;
 }
 .homepage-content{
     padding-top: 20px;
