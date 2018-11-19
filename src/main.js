@@ -15,11 +15,11 @@ const routes = [{
   },
   {
     path: '/illustration',
-    component: Illustration,
-    children: [{
-      path: 'electric-animals',
-      component: ElectricAnimals
-    }]
+    component: Illustration
+  },
+  {
+    path: '/illustration/electric-animals',
+    component: ElectricAnimals
   },
   {
     path: '/graphism',

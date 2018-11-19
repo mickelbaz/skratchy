@@ -21,68 +21,25 @@
     </div>
     <div class="illustration-content">
         <div class="electric-animals">
-          <router-view>
+          <router-link :to="illustrationItems.url">
             <img src="../assets/illustrations/electric_animals/electric-animals.png">
-          </router-view>
+          </router-link>
         </div>
     </div>
 </div>
 </template>
 
 <script>
-import ElectricAnimals from "./ElectricAnimals.vue";
-
 export default {
   data() {
     return {
       mainTitle: "Illustrations",
       electricTitle: "electric animals",
-      electricAnimals: [
-        {
-          name: "lizard",
-          url: require("../assets/illustrations/electric_animals/lizard.jpg")
-        },
-        {
-          name: "ornithorhynchus",
-          url: require("../assets/illustrations/electric_animals/ornithorhynchus.jpg")
-        },
-        {
-          name: "bee",
-          url: require("../assets/illustrations/electric_animals/bee.jpg")
-        },
-        {
-          name: "leg",
-          url: require("../assets/illustrations/electric_animals/leg.jpg")
-        },
-        {
-          name: "morray",
-          url: require("../assets/illustrations/electric_animals/morray.jpg")
-        },
-        {
-          name: "morray2",
-          url: require("../assets/illustrations/electric_animals/morray2.jpg")
-        },
-        {
-          name: "elephant-fish",
-          url: require("../assets/illustrations/electric_animals/elephant-fish.jpg")
-        },
-        {
-          name: "jelly-fish",
-          url: require("../assets/illustrations/electric_animals/jelly-fish.jpg")
-        },
-        {
-          name: "hornet",
-          url: require("../assets/illustrations/electric_animals/hornet.jpg")
-        },
-        {
-          name: "gecko",
-          url: require("../assets/illustrations/electric_animals/gecko.jpg")
-        }
-      ]
+      illustrationItems: {
+        name: "electric animals",
+        url: "/illustration/electric-animals"
+      }
     };
-  },
-  components: {
-    ElectricAnimals
   }
 };
 </script>
@@ -115,7 +72,6 @@ export default {
   top: 60%;
   left: 25px;
   right: 25px;
-  animation-name: example 2s infinite;
 }
 .illustration .arrowLeft,
 .illustration .arrowRight {
@@ -146,6 +102,10 @@ export default {
 }
 .illustration-content {
   margin-top: 40px;
+}
+
+.illustration-content .electric-animals img {
+  width: 100%;
 }
 
 .electric-animals .ornithorhynchus {
