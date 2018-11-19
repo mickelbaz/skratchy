@@ -17,6 +17,7 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,700');
 #app {
   font-family: 'Work Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -38,6 +39,4 @@ button{
   color: black;
   font-family: 'Work Sans', sans-serif;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,700');
 </style>

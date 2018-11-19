@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 103 103">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-arrowLeft);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-arrowLeft">
+      <rect width="103" height="103"/>
+    </clipPath>
+  </defs>
+  <g id="arrowLeft" class="cls-1">
+    <rect class="cls-2" width="103" height="103"/>
+    <g id="noun_Arrow_1920971" transform="translate(2 1.5)">
+      <path id="Tracé_1" data-name="Tracé 1" d="M70,2.5l7.5,7.6L37.6,50,77.5,89.9,70,97.5,22.5,50Z"/>
+    </g>
+  </g>
+</svg>

@@ -13,7 +13,18 @@
             <div v-show="aboutActive" class="close-button">
                 <button @click="aboutActive = !aboutActive">close</button>
             </div>
-            <h1>about</h1>
+            <h1>{{ aboutTitle }}</h1>
+            <h1 class="name-title">{{ name }}</h1>
+            <div class="social-networks">
+                <ul class="social-networks-list">
+                    <li :key="JSON.stringify(socialNetwork)"
+                        v-for="socialNetwork in socialNetworks">
+                        <a :href="socialNetwork.url">
+                            <img :src="socialNetwork.image" :alt="socialNetwork.name">
+                        </a>  
+                    </li>
+                </ul>
+            </div>
         </div>
     </transition>
 </div>
@@ -23,7 +34,21 @@
 export default {
     data() {
             return {
-                aboutActive: false
+                name: "Clara Delahaye",
+                aboutActive: false,
+                aboutTitle: 'about',
+                socialNetworks: [
+                    {
+                        name: 'instagram',
+                        image: require('../assets/instagram-logo.png'),
+                        url: 'https://www.instagram.com/___skratchy___/'
+                    },
+                    {
+                        name: 'linkedin',
+                        image: require('../assets/linked-in-logo.png'),
+                        url: 'https://www.instagram.com/___skratchy___/'
+                    }
+                ]
             }
         }
 }
@@ -34,9 +59,7 @@ export default {
     display: flex;
     justify-content: space-between;
     padding: 30px 50px;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: transparent;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: fixed;
@@ -95,6 +118,7 @@ export default {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+    padding-right: 0;
 }
 
 .about-button button:focus,
@@ -109,5 +133,25 @@ export default {
 }
 .close-button button{
     color: white;
+}
+.about .name-title{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 54px;
+    margin-top: 50px;
+}
+.about ul.social-networks-list{
+    padding: 0;
+    margin: 0;
+}
+.about .social-networks li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.about .social-networks img{
+    transition: all .2s;
+}
+.about .social-networks a:hover img{
+    opacity: .6;
 }
 </style>
