@@ -1,41 +1,17 @@
 <template>
-<div class="illustration">
-    <h1>{{ mainTitle }}</h1>
-    <div class="selector">
-        <div class="arrowLeft">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 103 103">
-                <g id="arrow-left" transform="translate(2 1.5)">
-                    <path id="Layer_1" data-name="Layer 1" d="M70,2.5l7.5,7.6L37.6,50,77.5,89.9,70,97.5,22.5,50Z" />
-                </g>
-            </svg>
+    <div class="electric-animals">
+            <h2>{{ electricTitle }}</h2>
+            <img :key="JSON.stringify(electricAnimal)"
+                v-for="electricAnimal in electricAnimals"
+                :src="electricAnimal.url"
+                :class="electricAnimal.name">
         </div>
-        <div class="arrowRight">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 103 103">
-                <g id="arrowRight" class="cls-3" transform="translate(79.5 99) rotate(180)">
-                    <g transform="translate(-22.5 -2.5)">
-                        <path id="Layer_1" data-name="Layer 1" d="M70,2.5l7.5,7.6L37.6,50,77.5,89.9,70,97.5,22.5,50Z" />
-                    </g>
-                </g>
-            </svg>
-        </div>
-    </div>
-    <div class="illustration-content">
-        <div class="electric-animals">
-          <router-view>
-            <img src="../assets/illustrations/electric_animals/electric-animals.png">
-          </router-view>
-        </div>
-    </div>
-</div>
 </template>
 
 <script>
-import ElectricAnimals from "./ElectricAnimals.vue";
-
 export default {
   data() {
     return {
-      mainTitle: "Illustrations",
       electricTitle: "electric animals",
       electricAnimals: [
         {
@@ -80,72 +56,18 @@ export default {
         }
       ]
     };
-  },
-  components: {
-    ElectricAnimals
   }
 };
 </script>
 
 <style scoped>
-@keyframes bounceLeft {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-15px);
-  }
+.electric-animals {
+  display: grid;
+  grid-template-columns: 20% 20% 10% 25% 25%;
+  grid-template-rows: 23% 27% 25%;
 }
-@keyframes bounceRight {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(15px);
-  }
-}
-
-.illustration-content {
-  padding-left: 8%;
-  padding-right: 8%;
-  position: relative;
-}
-.illustration .selector {
-  position: fixed;
-  top: 60%;
-  left: 25px;
-  right: 25px;
-  animation-name: example 2s infinite;
-}
-.illustration .arrowLeft,
-.illustration .arrowRight {
-  width: 40px;
-  position: absolute;
-}
-.illustration .arrowLeft {
-  top: 36%;
-  right: 2%;
-  animation: bounceLeft 1.5s infinite;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-}
-.illustration .arrowRight {
-  top: 36%;
-  left: 2%;
-  animation: bounceRight 1.5s infinite;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-}
-.illustration-content {
-  margin-top: 40px;
+.electric-animals img {
+  width: 100%;
 }
 
 .electric-animals .ornithorhynchus {
@@ -217,4 +139,3 @@ export default {
   margin-top: 50%;
 }
 </style>
-
