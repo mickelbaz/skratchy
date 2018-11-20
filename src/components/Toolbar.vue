@@ -1,36 +1,41 @@
 <template>
-<div class="navbar" >
+  <div class="navbar">
     <div class="logo">
-        <router-link to="/">
-            <img src="../assets/logo.png" alt="">
-        </router-link>
+      <router-link to="/">
+        <img src="../assets/logo.png" alt="">
+      </router-link>
     </div>
     <div v-show="!aboutActive" class="about-button">
-        <button @click="aboutActive = !aboutActive">about</button>
+      <button @click="aboutActive = !aboutActive">about</button>
     </div>
     <transition name="fade">
-        <div v-show="aboutActive" @click="aboutActive = !aboutActive" class="about">
-            <div v-show="aboutActive" class="close-button">
-                <button @click="aboutActive = !aboutActive">close</button>
-            </div>
-            <h1>{{ aboutTitle }}</h1>
-            <h1 class="name-title">{{ name }}</h1>
-                <a class="send-email" href="mailto:webmaster@example.com">
-                    {{ emailTitle }}
-                </a>
-            <div class="social-networks">
-                <ul class="social-networks-list">
-                    <li :key="JSON.stringify(socialNetwork)"
-                        v-for="socialNetwork in socialNetworks">
-                        <a :href="socialNetwork.url">
-                            <img :src="socialNetwork.image" :alt="socialNetwork.name">
-                        </a>  
-                    </li>
-                </ul>
-            </div>
+      <div v-show="aboutActive" @click="aboutActive = !aboutActive" class="about">
+        <div v-show="aboutActive" class="close-button">
+          <button @click="aboutActive = !aboutActive">close</button>
         </div>
+        <h1>{{ aboutTitle }}</h1>
+        <h1 class="name-title">{{ name }}</h1>
+        <div class="info">
+          <div class="column"></div>
+          <div class="column">
+            <a class="send-email" href="mailto:webmaster@example.com">
+              {{ emailTitle }}
+            </a>
+          </div>
+        </div>
+
+        <div class="social-networks">
+          <ul class="social-networks-list">
+            <li :key="JSON.stringify(socialNetwork)" v-for="socialNetwork in socialNetworks">
+              <a :href="socialNetwork.url">
+                <img :src="socialNetwork.image" :alt="socialNetwork.name">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </transition>
-</div>
+  </div>
 </template>
 
 <script>
@@ -89,11 +94,17 @@ export default {
 .navbar li {
   margin-right: 20px;
 }
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+
+.fade-enter,
+  .fade-leave-to
+
+  /* .fade-leave-active below version 2.1.8 */
+ {
   opacity: 0;
 }
 
@@ -136,15 +147,26 @@ export default {
   top: 30px;
   right: 50px;
 }
+
 .close-button button {
   color: white;
 }
+
 .about .name-title {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 54px;
   margin-top: 50px;
 }
+
+.about .info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
 .about a.send-email {
   color: white;
   padding-left: 40px;
@@ -155,23 +177,28 @@ export default {
   text-decoration: none;
   width: 10%;
 }
+
 .about ul.social-networks-list {
   padding: 0;
   margin: 0;
 }
+
 .about .social-networks li {
   margin-left: 20px;
   margin-right: 20px;
 }
+
 .about .social-networks img {
   transition: all 0.2s;
 }
+
 .about .social-networks a:hover img {
   opacity: 0.6;
 }
-.about .social-networks{
-    position: absolute;
-    bottom: 30px;
-    width: 100%;
+
+.about .social-networks {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
 }
 </style>

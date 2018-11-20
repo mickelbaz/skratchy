@@ -3,7 +3,7 @@
   <h1>{{ electricTitle }}</h1>
   <router-link to="/illustration">
     <div class="back-button">
-      <img src="../assets/icons/back.svg" alt="">
+      <img :src="goBack.img" alt="go back">
     </div>
   </router-link>
   <div class="electric-animals-content">
@@ -17,6 +17,10 @@ export default {
   data() {
     return {
       electricTitle: "electric animals",
+      goBack: {
+        name: "go back",
+        img: require("../assets/icons/back.svg")
+      },
       electricAnimals: [
         {
           name: "lizard",
