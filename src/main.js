@@ -4,22 +4,31 @@ import VueRouter from 'vue-router'
 import Homepage from './components/Homepage.vue'
 import Illustration from './components/Illustration.vue'
 import ElectricAnimals from './components/ElectricAnimals.vue'
+import LaBoom from './components/LaBoom.vue'
 import Graphism from './components/Graphism.vue'
 import Photography from './components/Photography.vue'
 
 Vue.config.productionTip = false
 
-const routes = [{
+const routes = [
+  {
     path: '/',
     component: Homepage
   },
   {
     path: '/illustration',
-    component: Illustration
-  },
-  {
-    path: '/illustration/electric-animals',
-    component: ElectricAnimals
+    component: Illustration,
+    children: [
+      {
+        path: 'electric-animals',
+        component: ElectricAnimals
+    
+      },
+      {
+        path: 'la-boom',
+        component: LaBoom
+      }
+    ]
   },
   {
     path: '/graphism',
@@ -31,7 +40,14 @@ const routes = [{
   }
 ]
 const router = new VueRouter({
-  routes
+  routes,
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+  }
 })
 
 Vue.use(VueRouter)

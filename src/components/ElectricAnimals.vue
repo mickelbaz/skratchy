@@ -1,13 +1,15 @@
 <template>
 <div class="electric-animals">
-  <h1>{{ electricTitle }}</h1>
+  <h1>{{ titleName }}</h1>
   <router-link to="/illustration">
     <div class="back-button">
       <img :src="goBack.img" alt="go back">
     </div>
   </router-link>
   <div class="electric-animals-content">
-    
+    <h2>{{ electricTitle }}</h2>
+    <img :key="JSON.stringify(electricAnimal)" v-for="electricAnimal in electricAnimals" :src="electricAnimal.url"
+      :class="electricAnimal.name">
   </div>
 </div>
 </template>
@@ -16,7 +18,7 @@
 export default {
   data() {
     return {
-      electricTitle: "electric animals",
+      titleName: "electric animals",
       goBack: {
         name: "go back",
         img: require("../assets/icons/back.svg")

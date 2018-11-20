@@ -1,7 +1,13 @@
 <template>
   <div id="app">
     <toolbar/>
-    <router-view></router-view>
+    <transition
+        name="fade"
+        enter-active-class="animated tada"
+        leave-active-class="animated bounceOutRight"
+        mode="out-in">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
@@ -39,4 +45,19 @@ button{
   color: black;
   font-family: 'Work Sans', sans-serif;
 }
+.no-scroll{
+  overflow-y: hidden;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
+}
+
 </style>

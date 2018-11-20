@@ -24,8 +24,8 @@
                 class="thumbnail">
                 <img :src="illustrationCategory.image">
                 <div class="category-info">
-                    <h2 class="category-type">{{ illustrationCategory.type }}</h2>
-                    <router-link :to="illustrationCategory.url" class="category-title">
+                    <h1 class="category-type">{{ illustrationCategory.type }}</h1>
+                    <router-link to="/illustration/electric-animals" class="category-title">
                         <h2>{{ illustrationCategory.name }}</h2>
                         <div class="more">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40">
@@ -73,7 +73,7 @@ export default {
           type: "vinyl",
           class: "la-boom",
           image: require("../assets/illustrations/la_boom/la_boom-cover.png"),
-          url: "/illustration/electric-animals"
+          url: "/illustration/la-boom"
         },
         {
           name: "le dragon",
@@ -213,14 +213,18 @@ export default {
 
 .illustration-content .category-type {
   text-align: left;
+  font-weight: 300;
+  text-transform: capitalize;
 }
 
 .illustration-content .category-title {
   display: flex;
 }
+.illustration-content .category-title h2{
+    margin-top: 0;
+}
 
 .illustration-content .category-title .more {
-  align-self: center;
   margin-left: 14px;
 }
 

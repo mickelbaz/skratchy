@@ -6,10 +6,10 @@
       </router-link>
     </div>
     <div v-show="!aboutActive" class="about-button">
-      <button @click="aboutActive = !aboutActive">about</button>
+      <button @click="handler(aboutActive = !aboutActive, mounted())">about</button>
     </div>
     <transition name="fade">
-      <div v-show="aboutActive" @click="aboutActive = !aboutActive" class="about">
+      <div v-show="aboutActive" @click="handler(aboutActive = !aboutActive, destroyed())" class="about">
         <div v-show="aboutActive" class="close-button">
           <button @click="aboutActive = !aboutActive">close</button>
         </div>
@@ -46,8 +46,7 @@ export default {
       aboutActive: false,
       aboutTitle: "about",
       emailTitle: "email me!",
-      socialNetworks: [
-        {
+      socialNetworks: [{
           name: "instagram",
           image: require("../assets/icons/instagram-logo.png"),
           url: "https://www.instagram.com/___skratchy___/"
@@ -59,6 +58,23 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    toggleBodyClass(addRemoveClass, className) {
+      const el = document.body;
+
+      if (addRemoveClass === 'addClass') {
+        el.classList.add(className);
+      } else {
+        el.classList.remove(className);
+      }
+    },
+    mounted() {
+      this.toggleBodyClass('addClass', 'no-scroll');
+    },
+    destroyed() {
+      this.toggleBodyClass('removeClass', 'no-scroll');
+    }
   }
 };
 </script>
