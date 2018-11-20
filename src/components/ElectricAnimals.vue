@@ -1,8 +1,10 @@
 <template>
 <div class="electric-animals">
   <h1>{{ electricTitle }}</h1>
-  <router-link to="/illustration" class="back-button">
-    <img src="../assets/icons/back.svg" alt="">
+  <router-link to="/illustration">
+    <div class="back-button">
+      <img src="../assets/icons/back.svg" alt="">
+    </div>
   </router-link>
   <div class="electric-animals-content">
     
@@ -71,11 +73,12 @@ export default {
     transform: translateX(-15px);
   }
 }
-.back-button img {
-  width: 50px;
+.back-button {
   position: fixed;
   top: 105px;
   left: 55px;
+}
+.back-button img {
   animation-name: example 2s infinite;
   animation: bounceLeft 1.5s infinite;
   -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -84,5 +87,7 @@ export default {
   animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
+  width: 50px;
+  height: 50px;
 }
 </style>

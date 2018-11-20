@@ -1,7 +1,7 @@
 <template>
 <div class="illustration">
-    <h1>{{ mainTitle }}</h1>
-    <div class="selector">
+    <h1 class="illustration-main-title">{{ mainTitle }}</h1>
+    <!-- <div class="selector">
         <div class="arrowLeft">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 103 103">
                 <g id="arrow-left" transform="translate(2 1.5)">
@@ -18,12 +18,20 @@
                 </g>
             </svg>
         </div>
-    </div>
+    </div> -->
     <div class="illustration-content">
-        <div class="electric-animals">
-          <router-link :to="illustrationItems.url">
-            <img src="../assets/illustrations/electric_animals/electric-animals.png">
+        <div :key="JSON.stringify(illustrationItem)" v-for="illustrationItem in illustrationItems" :class="illustrationItem.class" class="thumbnail">
+          <img  :src="illustrationItem.image">
+          <router-link :to="illustrationItem.url" class="illustration-title">
+            <h2>{{ illustrationItem.name }}</h2>
           </router-link>
+          <div class="arrowLeft">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 103 103">
+                <g id="arrow-left" transform="translate(2 1.5)">
+                    <path id="Layer_1" data-name="Layer 1" d="M70,2.5l7.5,7.6L37.6,50,77.5,89.9,70,97.5,22.5,50Z" />
+                </g>
+            </svg>
+        </div>
         </div>
     </div>
 </div>
@@ -31,16 +39,51 @@
 
 <script>
 export default {
-  data() {
-    return {
-      mainTitle: "Illustrations",
-      electricTitle: "electric animals",
-      illustrationItems: {
-        name: "electric animals",
-        url: "/illustration/electric-animals"
-      }
-    };
-  }
+    data() {
+        return {
+            mainTitle: "Illustrations_",
+            electricTitle: "electric-animals",
+            illustrationItems: [
+                {
+                    name: "electric animals",
+                    class: "electric-animals",
+                    image: require("../assets/illustrations/electric_animals/electric_animals-thumbnail.png"),
+                    url: "/illustration/electric-animals"
+                },
+                {
+                    name: "la boom",
+                    class: "la-boom",
+                    image: require("../assets/illustrations/la_boom/la_boom-cover.png"),
+                    url: "/illustration/electric-animals"
+                },
+                {
+                    name: "le dragon",
+                    class: "le-dragon",
+                    image: require("../assets/illustrations/le_dragon/le_dragon.png"),
+                    url: "/illustration/electric-animals"
+                },
+                {
+                    name: "dessins de presse",
+                    class: "press-drawings",
+                    image: require("../assets/illustrations/press/press-thumbnail.png"),
+                    url: "/illustration/electric-animals"
+                },
+                {
+                    name: "caricature",
+                    class: "caricature",
+                    image: require("../assets/illustrations/caricature/caricature.png"),
+                    url: "/illustration/electric-animals"
+                },
+                {
+                    name: "wolf",
+                    class: "wolf",
+                    image: require("../assets/illustrations/wolf/wolf.png"),
+                    url: "/illustration/electric-animals"
+                }
+            ]
+
+        };
+    }
 };
 </script>
 
@@ -61,7 +104,17 @@ export default {
     transform: translateX(15px);
   }
 }
-
+.illustration{
+    display: flex;
+    flex-direction: column;
+}
+.illustration h1.illustration-main-title{
+    text-transform: uppercase;
+    float: left;
+    padding-left: 8%;
+    font-size: 3rem;
+    margin-top: 0;
+}
 .illustration-content {
   padding-left: 8%;
   padding-right: 8%;
@@ -69,7 +122,7 @@ export default {
 }
 .illustration .selector {
   position: fixed;
-  top: 60%;
+  top: 50%;
   left: 25px;
   right: 25px;
 }
@@ -80,7 +133,7 @@ export default {
 }
 .illustration .arrowLeft {
   top: 36%;
-  right: 2%;
+  right: 0;
   animation: bounceLeft 1.5s infinite;
   -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -91,7 +144,7 @@ export default {
 }
 .illustration .arrowRight {
   top: 36%;
-  left: 2%;
+  left: -8%;
   animation: bounceRight 1.5s infinite;
   -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -104,77 +157,24 @@ export default {
   margin-top: 40px;
 }
 
-.illustration-content .electric-animals img {
-  width: 100%;
+.illustration-content img {
+  height: 80vh;
+  transition: all 0.7s ease-in-out;
+}
+.illustration-content .illustration-title{
+    align-self: flex-end;
 }
 
-.electric-animals .ornithorhynchus {
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 3;
+.illustration-content .thumbnail{
+    margin-bottom: 10em;
+    display: flex;
+    position: relative;
 }
-.electric-animals .bee {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 3;
-}
-.electric-animals .morray {
-  grid-column-start: 4;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-.electric-animals .morray2 {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-.electric-animals .hornet {
-  grid-column-start: 5;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-.electric-animals .jelly-fish {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-.electric-animals .lizard {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-.electric-animals .gecko {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-.electric-animals .elephant-fish {
-  grid-column-start: 4;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 2;
-}
-.electric-animals .leg {
-  grid-column-start: 5;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-.electric-animals h2 {
-  grid-column-start: 4;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  margin-bottom: 0;
-  margin-top: 50%;
-}
+/* @media screen and (max-width: 1185px){
+    .illustration-content .electric-animals img{
+        width: 95%;
+        height: auto;
+    }
+} */
 </style>
 

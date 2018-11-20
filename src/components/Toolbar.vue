@@ -9,7 +9,7 @@
         <button @click="aboutActive = !aboutActive">about</button>
     </div>
     <transition name="fade">
-        <div v-show="aboutActive" class="about">
+        <div v-show="aboutActive" @click="aboutActive = !aboutActive" class="about">
             <div v-show="aboutActive" class="close-button">
                 <button @click="aboutActive = !aboutActive">close</button>
             </div>
@@ -168,5 +168,10 @@ export default {
 }
 .about .social-networks a:hover img {
   opacity: 0.6;
+}
+.about .social-networks{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
 }
 </style>
