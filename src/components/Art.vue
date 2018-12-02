@@ -1,14 +1,11 @@
 <template>
-    <div :class="artName"
-        class="art-page">
-        <h1 :class="[artName + ' main-title']"
-            class="main-title">{{ mainTitle }}</h1>
-        <div :class="[artName + ' -content']"
-            class="art-content">
-            <categories :category-item='categoryItem'
-                        :art-categories="artCategories"></categories>
-        </div>
+<div :class="artName" class="art-page">
+    <h1 :class="[artName + ' main-title']" class="main-title">{{ mainTitle }}</h1>
+    <div :class="[artName + ' -content']" class="art-content">
+        <categories :art-categories="artCategories"></categories>
     </div>
+
+</div>
 </template>
 
 <script>
@@ -18,6 +15,11 @@ export default {
     props: ['artName', 'mainTitle', 'artCategories'],
     components: {
         Categories
+    },
+    data(){
+        return{
+            showModal: false
+        };
     }
 }
 </script>
@@ -87,5 +89,8 @@ export default {
     left: 25px;
     right: 25px;
 }
+
+
+
 </style>
 

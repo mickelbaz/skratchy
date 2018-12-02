@@ -9,9 +9,11 @@
       <button @click="handler(aboutActive = !aboutActive, mounted())">about</button>
     </div>
     <transition name="fade">
-      <div v-show="aboutActive" @click="handler(aboutActive = !aboutActive, destroyed())" class="about">
+      <div v-show="aboutActive" class="about">
         <div v-show="aboutActive" class="close-button">
-          <button @click="aboutActive = !aboutActive">close</button>
+          <button @click="handler(aboutActive = !aboutActive, destroyed())">
+            <img src="../assets/icons/close.svg" alt="">
+          </button>
         </div>
         <h1>{{ aboutTitle }}</h1>
         <h1 class="name-title">{{ name }}</h1>

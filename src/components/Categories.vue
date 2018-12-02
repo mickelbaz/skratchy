@@ -29,21 +29,25 @@
                 </svg>
             </div>
         </div> -->
-
 <div class="galleryContainer">
-    <router-link :to="categoryItem.url" :key="JSON.stringify(categoryItem)" v-for="categoryItem in artCategories">
+    <div :key="JSON.stringify(categoryItem)" v-for="categoryItem in artCategories">
         <div style="margin: 15px;">
-            <div :class="categoryItem.name" class="galleryCard">
+            <div class="galleryCard" id="show-modal" @click="showModal(JSON.stringify(categoryItem))">
                 <img :src="categoryItem.image" alt="">
             </div>
         </div>
-    </router-link>
+
+        <work-details-modal :id="'modal'+ JSON.stringify(categoryItem)" v-show="openedModal === JSON.stringify(categoryItem)"
+            @close="openedModal = null">
+            <h3 slot="header">{{ categoryItem.name }}</h3>
+        </work-details-modal>
+    </div>
 </div>
 
 </template>
 
 <script>
-// import sal from 'sal.js';
+import WorkDetailsModal from './WorkDetailsModal.vue';
 
 export default {
     props: ['artCategories'],
@@ -55,6 +59,15 @@ export default {
     // mounted() {
     //     sal();
     // }
+    components: {
+        WorkDetailsModal
+    },
+    data() { return { openedModal: null }  },
+    methods: {
+    showModal(id) {
+      this.openedModal = id
+    }
+  }
 }
 </script>
 
