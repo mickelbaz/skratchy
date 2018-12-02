@@ -56,10 +56,18 @@ img{
   width: 335px;
 }
 .art{
-  transition: all .2s ease-in-out;
+  -webkit-box-shadow: 0 20px 50px rgba(0,0,0,.25);
+    box-shadow: 0 20px 50px rgba(0,0,0,.25);
+    -webkit-transition: all .5s cubic-bezier(.175,1.2,.32,1.275);
+    -o-transition: all .5s cubic-bezier(.175,1.2,.32,1.275);
+    transition: all .5s cubic-bezier(.175,1.2,.32,1.275);
 }
 .art:hover{
-  transform: scale(1.1);
+  -webkit-transform: scale(1.005);
+    -ms-transform: scale(1.005);
+    transform: scale(1.005);
+    -webkit-box-shadow: 0 30px 60px rgba(0,0,0,.25);
+    box-shadow: 0 30px 60px rgba(0,0,0,.25);
 }
 .items {
   display: flex;

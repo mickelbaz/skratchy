@@ -1,5 +1,5 @@
 <template>
-        <!-- <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="800" data-sal-easing="ease-out-bounce"
+<!-- <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="800" data-sal-easing="ease-out-bounce"
             :class="categoryItem.class" class="category">
             <img :src="categoryItem.image">
             <div class="category-info">
@@ -30,34 +30,36 @@
             </div>
         </div> -->
 
-        <div class="galleryContainer">
-            <div v-for="categoryItem in artCategories"
-                :key="JSON.stringify(categoryItem)"
-                class="galleryCard">
+<div class="galleryContainer">
+    <router-link :to="categoryItem.url" :key="JSON.stringify(categoryItem)" v-for="categoryItem in artCategories">
+        <div style="margin: 15px;">
+            <div :class="categoryItem.name" class="galleryCard">
                 <img :src="categoryItem.image" alt="">
             </div>
         </div>
+    </router-link>
+</div>
 
 </template>
 
 <script>
-import sal from 'sal.js';
+// import sal from 'sal.js';
 
 export default {
     props: ['artCategories'],
-    data(){
-        return{
-            currStep: null
-        };
-    },
-    mounted() {
-        sal();
-    }
+    // data(){
+    //     return{
+    //         currStep: null
+    //     };
+    // },
+    // mounted() {
+    //     sal();
+    // }
 }
 </script>
 
 <style scoped>
-@import '../assets/css/sal.css';
+/* @import '../assets/css/sal.css'; */
 
 @keyframes bounceLeft {
     0% {
@@ -101,6 +103,27 @@ export default {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.galleryCard{
+    cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 20px 50px rgba(0,0,0,.25);
+    box-shadow: 0 20px 50px rgba(0,0,0,.25);
+    width: auto;
+    height: auto;
+    -webkit-transition: all .5s cubic-bezier(.175,1.2,.32,1.275);
+    -o-transition: all .5s cubic-bezier(.175,1.2,.32,1.275);
+    transition: all .5s cubic-bezier(.175,1.2,.32,1.275);
+}
+.galleryCard:hover {
+    -webkit-transform: scale(1.005);
+    -ms-transform: scale(1.005);
+    transform: scale(1.005);
+    -webkit-box-shadow: 0 30px 60px rgba(0,0,0,.25);
+    box-shadow: 0 30px 60px rgba(0,0,0,.25);
 }
 .galleryContainer img {
     height: 60vh;
