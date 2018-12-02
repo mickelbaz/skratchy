@@ -1,19 +1,18 @@
 <template>
 <div class="homepage-content">
-    <h1 class="name-title">{{ name }}</h1>
-    <div class="items">
-        <ul>
-            <li :key="JSON.stringify(homepageItem)" v-for="homepageItem in homepageItems" :class="homepageItem.name">
-                       <router-link :to="homepageItem.url">
-                           <div class="thumbnail">
-                                <h2>{{ homepageItem.name }}</h2>
-                           </div>
-                        </router-link>   
-            </li>
-        </ul>
-    </div>
+  <h1 class="name-title">{{ name }}</h1>
+  <div class="items">
+    <ul>
+      <li :key="JSON.stringify(homepageItem)" v-for="homepageItem in homepageItems" :class="homepageItem.name" class="art">
+        <router-link :to="homepageItem.url">
+          <div class="thumbnail">
+            <img :src="homepageItem.coverImage" :alt="homepageItem.name">
+          </div>
+        </router-link>
+      </li>
+    </ul>
+  </div>
 </div>
-    
 </template>
 
 <script>
@@ -24,15 +23,18 @@ export default {
       homepageItems: [
         {
           name: "illustration",
-          url: "/illustration"
+          url: "/illustration",
+          coverImage: require('../assets/illustrations.png')
         },
         {
           name: "graphism",
-          url: "/graphism"
+          url: "/graphism",
+          coverImage: require('../assets/graphism.png')
         },
         {
           name: "photography",
-          url: "/photography"
+          url: "/photography",
+          coverImage: require('../assets/photography.png')
         }
       ]
     };
@@ -50,7 +52,15 @@ h1.name-title {
 .homepage-content {
   padding-top: 20px;
 }
-
+img{
+  width: 335px;
+}
+.art{
+  transition: all .2s ease-in-out;
+}
+.art:hover{
+  transform: scale(1.1);
+}
 .items {
   display: flex;
   justify-content: space-around;
@@ -58,12 +68,12 @@ h1.name-title {
   box-sizing: border-box;
 }
 
-.items .illustration {
+/* .items .illustration {
   height: 20vw;
   transition: all 0.4s ease-in-out;
-}
+} */
 
-.items .illustration .thumbnail {
+/* .items .illustration .thumbnail {
   background-image: url("../assets/illustrations/dragon-high.jpg");
   background-size: 101%;
   background-position: 0px -11px;
@@ -81,16 +91,18 @@ h1.name-title {
 .items .illustration:hover .thumbnail,
 .items .illustration:focus .thumbnail {
   background-size: 120%;
-}
+} */
 
 .items ul {
   display: flex;
   justify-content: space-between;
   padding: 0;
   width: 100%;
+  list-style-type: none;
+  margin: 0 35px 0 35px;
 }
 
-.items li {
+/* .items li {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -99,7 +111,7 @@ h1.name-title {
   border: 1px solid black;
   margin-left: 10px;
   margin-right: 10px;
-}
+} */
 
 .items a {
   height: 100%;

@@ -2,33 +2,30 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 import Homepage from './components/Homepage.vue'
-import Illustration from './components/Illustration.vue'
-import ElectricAnimals from './components/ElectricAnimals.vue'
-import LaBoom from './components/LaBoom.vue'
-import Graphism from './components/Graphism.vue'
-import Photography from './components/Photography.vue'
+import Illustration from './components/arts/Illustration.vue'
+import ElectricAnimals from './components/arts/illustrations/ElectricAnimals.vue'
+import LaBoom from './components/arts/illustrations/LaBoom.vue'
+import Graphism from './components/arts/Graphism.vue'
+import Photography from './components/arts/Photography.vue'
 
 Vue.config.productionTip = false
 
-const routes = [
-  {
+const routes = [{
     path: '/',
     component: Homepage
   },
   {
     path: '/illustration',
     component: Illustration,
-    children: [
-      {
-        path: 'electric-animals',
-        component: ElectricAnimals
-    
-      },
-      {
-        path: 'la-boom',
-        component: LaBoom
-      }
-    ]
+  },
+  {
+    path: '/illustration/electric-animals',
+    component: ElectricAnimals
+
+  },
+  {
+    path: '/illustration/la-boom',
+    component: LaBoom
   },
   {
     path: '/graphism',
@@ -41,11 +38,14 @@ const routes = [
 ]
 const router = new VueRouter({
   routes,
-  scrollBehavior (to, from, savedPosition) {
+  scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition
     } else {
-      return { x: 0, y: 0 }
+      return {
+        x: 0,
+        y: 0
+      }
     }
   }
 })

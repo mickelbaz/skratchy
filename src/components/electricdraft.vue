@@ -8,6 +8,11 @@
 </div>
 </template>
 
+
+// <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="800" data-sal-easing="ease-out-bounce" :key="JSON.stringify(categoryItem)"
+//             v-for="categoryItem in categoryList" :class="categoryItem.class" class="thumbnail">
+
+
 <script>
 export default {
   data() {

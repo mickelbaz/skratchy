@@ -22,7 +22,7 @@ export default {
       titlePage: "la boom",
       goBack: {
         name: "go back",
-        img: require("../assets/icons/back.svg")
+        img: require("../../../assets/icons/back.svg")
       }
     };
   }
