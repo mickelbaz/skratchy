@@ -1,6 +1,6 @@
 <template>
   <art :art-name="artName"
-      :art-categories='illustrationCategories'
+      :art-categories='photographyCategories'
       :main-title="mainTitle"></art>
 </template>
 
@@ -12,7 +12,7 @@ export default {
     return {
       artName: "photography",
       mainTitle: "Photography_",
-      illustrationCategories: [{
+      photographyCategories: [{
           name: "portraits",
           type: "",
           class: "portraits",

@@ -5,9 +5,8 @@
             class="main-title">{{ mainTitle }}</h1>
         <div :class="[artName + ' -content']"
             class="art-content">
-            <categories v-for="categoryItem in artCategories"
-                  :key="JSON.stringify(categoryItem)"
-                  :category-item='categoryItem'></categories>
+            <categories :category-item='categoryItem'
+                        :art-categories="artCategories"></categories>
         </div>
     </div>
 </template>

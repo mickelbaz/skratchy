@@ -1,6 +1,6 @@
 <template>
   <art :art-name="artName"
-      :art-categories='illustrationCategories'
+      :art-categories='graphismCategories'
       :main-title="mainTitle"></art>
 </template>
 
@@ -12,7 +12,7 @@ export default {
     return {
       artName: "graphism",
       mainTitle: "Graphism_",
-      illustrationCategories: [{
+      graphismCategories: [{
           name: "cinquante degrés à l'ombre",
           type: "WAD Magazine",
           class: "wad-mag",

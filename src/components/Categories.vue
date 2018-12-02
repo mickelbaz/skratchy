@@ -31,8 +31,10 @@
         </div> -->
 
         <div class="galleryContainer">
-            <div class="galleryCard">
-
+            <div v-for="categoryItem in artCategories"
+                :key="JSON.stringify(categoryItem)"
+                class="galleryCard">
+                <img :src="categoryItem.image" alt="">
             </div>
         </div>
 
@@ -42,7 +44,7 @@
 import sal from 'sal.js';
 
 export default {
-    props: ['categoryItem'],
+    props: ['artCategories'],
     data(){
         return{
             currStep: null
@@ -95,7 +97,15 @@ export default {
         transform: rotate(360deg);
     }
 }
-
+.galleryContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.galleryContainer img {
+    height: 60vh;
+    transition: all 0.7s ease-in-out;
+}
 .category {
     margin-bottom: 10em;
     display: flex;
