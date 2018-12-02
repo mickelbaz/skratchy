@@ -12,11 +12,19 @@ export default {
     return {
       artName: "illustration",
       mainTitle: "Illustrations_",
-      illustrationCategories: [{
+      illustrationCategories: [
+        {
           name: "electric animals",
           type: "licence project",
           class: "electric-animals",
           image: require("../../assets/illustrations/electric_animals/electric_animals-thumbnail.png"),
+          url: "/illustration/electric-animals"
+        },
+        {
+          name: "le dragon",
+          type: "book",
+          class: "le-dragon",
+          image: require("../../assets/illustrations/le_dragon/le_dragon.png"),
           url: "/illustration/electric-animals"
         },
         {
@@ -25,13 +33,6 @@ export default {
           class: "la-boom",
           image: require("../../assets/illustrations/la_boom/la_boom-cover.png"),
           url: "/illustration/la-boom"
-        },
-        {
-          name: "le dragon",
-          type: "book",
-          class: "le-dragon",
-          image: require("../../assets/illustrations/le_dragon/le_dragon.png"),
-          url: "/illustration/electric-animals"
         },
         {
           name: "dessins de presse",
@@ -46,8 +47,41 @@ export default {
           url: "/illustration/electric-animals"
         },
         {
+          name: "croquis",
+          type: "",
+          class: "sketches",
+          image: require("../../assets/illustrations/electric_animals/electric_animals-thumbnail.png"),
+          url: "/illustration/electric-animals"
+        },
+        {
+          name: "dessin d'observation",
+          type: "",
+          class: "observation-drawing",
+          image: require("../../assets/illustrations/electric_animals/electric_animals-thumbnail.png"),
+          url: "/illustration/electric-animals"
+        },
+        {
+          name: "hippocampe",
+          type: "dessin d'observation",
+          class: "seahorse",
+          image: require("../../assets/illustrations/electric_animals/electric_animals-thumbnail.png"),
+          url: "/illustration/electric-animals"
+        },
+        {
           name: "wolf",
           class: "wolf",
+          image: require("../../assets/illustrations/wolf/wolf.png"),
+          url: "/illustration/electric-animals"
+        },
+        {
+          name: "thérapie taxi",
+          class: "taxi",
+          image: require("../../assets/illustrations/wolf/wolf.png"),
+          url: "/illustration/electric-animals"
+        },
+        {
+          name: "sin city",
+          class: "sin-city",
           image: require("../../assets/illustrations/wolf/wolf.png"),
           url: "/illustration/electric-animals"
         }

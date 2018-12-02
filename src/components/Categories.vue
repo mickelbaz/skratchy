@@ -1,5 +1,5 @@
 <template>
-        <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="800" data-sal-easing="ease-out-bounce"
+        <!-- <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="800" data-sal-easing="ease-out-bounce"
             :class="categoryItem.class" class="category">
             <img :src="categoryItem.image">
             <div class="category-info">
@@ -28,7 +28,14 @@
                     </g>
                 </svg>
             </div>
+        </div> -->
+
+        <div class="galleryContainer">
+            <div class="galleryCard">
+
+            </div>
         </div>
+
 </template>
 
 <script>

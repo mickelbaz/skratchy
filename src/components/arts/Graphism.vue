@@ -53,6 +53,20 @@ export default {
           class: "logo-creation",
           image: require("../../assets/graphism/liberty-bell.png"),
           url: "/illustration/electric-animals"
+        },
+        {
+          name: "que sais-je ?",
+          type: "livre",
+          class: "book-cover",
+          image: require("../../assets/graphism/liberty-bell.png"),
+          url: "/illustration/electric-animals"
+        },
+        {
+          name: "basalte",
+          type: "persistance rétinienne",
+          class: "book-cover",
+          image: require("../../assets/graphism/liberty-bell.png"),
+          url: "/illustration/electric-animals"
         }
       ]
     };

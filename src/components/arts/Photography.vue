@@ -25,6 +25,34 @@ export default {
           class: "mongolia",
           image: require("../../assets/photographies/mongolia.png"),
           url: "/illustration/electric-animals"
+        },
+        {
+          name: "danse",
+          type: "",
+          class: "dance",
+          image: require("../../assets/photographies/mongolia.png"),
+          url: "/illustration/electric-animals"
+        },
+        {
+          name: "poser un lapin",
+          type: "",
+          class: "rabbit",
+          image: require("../../assets/photographies/mongolia.png"),
+          url: "/illustration/electric-animals"
+        },
+        {
+          name: "le mouvement",
+          type: "",
+          class: "movement",
+          image: require("../../assets/photographies/mongolia.png"),
+          url: "/illustration/electric-animals"
+        },
+        {
+          name: "new york",
+          type: "",
+          class: "nyc",
+          image: require("../../assets/photographies/mongolia.png"),
+          url: "/illustration/electric-animals"
         }
       ]
     };
