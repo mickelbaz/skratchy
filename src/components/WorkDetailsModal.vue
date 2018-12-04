@@ -7,10 +7,13 @@
         </div>
         <div class="modal-container">
           <div class="modal-header">
-            <slot name="header">
-              <h3 class>Work type</h3>
-              <h1>Work name</h1>
-            </slot>
+              <div class="head-title content-text">
+                <slot name="head-title">
+                    <h3 class="work-type">Work type</h3>
+                    <h1 class="work-name">Work name</h1>
+                </slot>
+              </div>
+              <hr>
           </div>
 
           <div class="modal-body">
@@ -60,7 +63,7 @@ export default {
   height: auto;
   -webkit-box-shadow: 0 50px 200px rgba(0, 0, 0, 0.5);
   box-shadow: 0 50px 200px rgba(0, 0, 0, 0.5);
-  width: 50vw;
+  width: calc(100vw - 60px);
   max-width: 1056px;
   margin: 30px auto 60px;
   background-color: #232425;
@@ -77,17 +80,23 @@ export default {
   border: 1px solid #2c2e30;
 }
 
+.content-text{
+    padding: 15px 30px 35px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .modal-header {
   margin-top: 0;
   text-align: left;
 }
 
-.modal-header h1 {
+.modal-header h1.work-name {
   margin-top: 0;
   font-size: 3em;
 }
 
-.modal-header h3 {
+.modal-header h3.work-type {
   font-weight: 300;
   text-transform: uppercase;
 }

@@ -42,8 +42,8 @@
         v-show="openedModal === JSON.stringify(categoryItem)"
         @close="openedModal = null"
       >
-        <h3 slot="header">{{ categoryItem.type }}</h3>
-        <h1 slot="header">{{ categoryItem.name }}</h1>
+        <h3 slot="head-title" class="work-type">{{ categoryItem.type }}</h3>
+        <h1 slot="head-title" class="work-name">{{ categoryItem.name }}</h1>
       </work-details-modal>
     </div>
   </div>
@@ -116,6 +116,9 @@ export default {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+h3.work-type{
+    font-weight: 300;
 }
 .galleryContainer {
   display: flex;
@@ -222,6 +225,15 @@ export default {
   animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
+}
+.modal-header h1.work-name {
+  margin-top: 0;
+  font-size: 3em;
+}
+
+.modal-header h3.work-type {
+  font-weight: 300;
+  text-transform: uppercase;
 }
 </style>
 

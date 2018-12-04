@@ -10,10 +10,9 @@
     </div>
     <transition name="fade">
       <div v-show="aboutActive" class="about">
-        <div v-show="aboutActive" class="close-button">
-          <button @click="handler(aboutActive = !aboutActive, destroyed())">
+        <div v-show="aboutActive" class="close-button" @click="handler(aboutActive = !aboutActive, destroyed())">
+          
             <img src="../assets/icons/close.svg" alt="">
-          </button>
         </div>
         <h1>{{ aboutTitle }}</h1>
         <h1 class="name-title">{{ name }}</h1>
@@ -161,10 +160,20 @@ export default {
 }
 
 .close-button {
-  position: absolute;
-  top: 30px;
-  right: 50px;
+  border: none;
+  padding: 15px;
+  position: fixed;
+  z-index: 100000;
+  overflow: visible;
+  top: 15px;
+  right: 15px;
+  border-radius: 100px;
+  cursor: pointer;
 }
+.close-button img {
+  width: 25px;
+}
+
 
 .close-button button {
   color: white;
