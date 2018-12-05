@@ -64,6 +64,7 @@ import WorkDetailsModal from "./WorkDetailsModal.vue";
 import ElectricAnimalsContent from "./arts/illustrations/ElectricAnimalsContent.vue";
 import LaBoomContent from "./arts/illustrations/LaBoomContent.vue";
 import LeDragonContent from "./arts/illustrations/LeDragonContent.vue";
+import WadContent from "./arts/graphism/WadContent.vue";
 
 export default {
   props: ["artCategories"],
@@ -79,7 +80,8 @@ export default {
     WorkDetailsModal,
     electricAnimalsContent: ElectricAnimalsContent,
     laBoomContent: LaBoomContent,
-    leDragonContent: LeDragonContent
+    leDragonContent: LeDragonContent,
+    wadContent: WadContent
   },
   data() {
     return {

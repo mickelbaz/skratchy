@@ -17,7 +17,8 @@ export default {
           type: "WAD Magazine",
           class: "wad-mag",
           image: require("../../assets/graphism/wad.jpg"),
-          url: "/illustration/electric-animals"
+          url: "/illustration/electric-animals",
+          componentName: "wadContent"
         },
         {
           name: "identité visuelle",

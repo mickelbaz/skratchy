@@ -2,6 +2,8 @@
   <div class="la-boom">
     <!-- <h1>{{ titlePage }}</h1> -->
     <img src="../../../assets/illustrations/la_boom/la_boom-cover.jpg" alt>
+    <img src="../../../assets/illustrations/la_boom/la_boom-inside.jpg" alt>
+    <img src="../../../assets/illustrations/la_boom/la_boom-back.jpg" alt>
   </div>
 </template>
 
@@ -29,7 +31,7 @@ export default {
   }
 }
 img {
-  height: 60vh;
+  height: 80vh;
 }
 .back-button {
   position: fixed;

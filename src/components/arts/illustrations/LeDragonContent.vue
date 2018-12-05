@@ -2,6 +2,9 @@
   <div class="la-boom">
     <!-- <h1>{{ titlePage }}</h1> -->
     <img src="../../../assets/illustrations/le_dragon/dragon1.jpg" alt>
+    <img src="../../../assets/illustrations/le_dragon/dragon2.jpg" alt>
+    <img src="../../../assets/illustrations/le_dragon/dragon3.jpg" alt>
+    <img src="../../../assets/illustrations/le_dragon/dragon4.jpg" alt>
   </div>
 </template>
 
