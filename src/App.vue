@@ -1,32 +1,28 @@
 <template>
   <div id="app">
     <toolbar/>
-    <transition
-        name="fade"
-        enter-active-class="animated tada"
-        leave-active-class="animated bounceOutRight"
-        mode="out-in">
+    <transition name="slide-fade" mode="out-in">
       <router-view></router-view>
     </transition>
   </div>
 </template>
 
 <script>
-import Toolbar from './components/Toolbar.vue'
+import Toolbar from "./components/Toolbar.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     Toolbar
   }
-}
+};
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,700");
 @import "(..)/node_modules/sal.js/dist/sal.css";
 #app {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -38,15 +34,15 @@ export default {
   margin-left: auto;
 }
 
-a{
+a {
   color: black;
 }
 
-button{
+button {
   color: black;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
-.no-scroll{
+.no-scroll {
   overflow-y: hidden;
 }
 .fade-enter-active,
@@ -58,7 +54,17 @@ button{
 
 .fade-enter,
 .fade-leave-active {
-  opacity: 0
+  opacity: 0;
 }
-
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateY(-50px);
+  opacity: 0;
+}
 </style>

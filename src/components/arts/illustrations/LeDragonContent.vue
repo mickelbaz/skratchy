@@ -1,8 +1,8 @@
 <template>
-<div class="la-boom">
+  <div class="la-boom">
     <!-- <h1>{{ titlePage }}</h1> -->
-    <img src="../../../assets/illustrations/le_dragon/dragon1.jpg" alt="">
-</div>
+    <img src="../../../assets/illustrations/le_dragon/dragon1.jpg" alt>
+  </div>
 </template>
 
 <script>
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style scoped>
-img{
-    width: 80%;
+img {
+  height: 90vh;
 }
 </style>

@@ -1,7 +1,8 @@
 <template>
-<div class="la-boom">
-    <h1>{{ titlePage }}</h1>
-</div>
+  <div class="la-boom">
+    <!-- <h1>{{ titlePage }}</h1> -->
+    <img src="../../../assets/illustrations/la_boom/la_boom-cover.jpg" alt>
+  </div>
 </template>
 
 <script>
@@ -26,6 +27,9 @@ export default {
   100% {
     transform: translateX(-15px);
   }
+}
+img {
+  height: 60vh;
 }
 .back-button {
   position: fixed;

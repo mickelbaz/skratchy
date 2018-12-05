@@ -1,11 +1,9 @@
 <template>
-  <art :art-name="artName"
-      :art-categories='illustrationCategories'
-      :main-title="mainTitle"></art>
+  <art :art-name="artName" :art-categories="illustrationCategories" :main-title="mainTitle"></art>
 </template>
 
 <script>
-import Art from '../Art.vue';
+import Art from "../Art.vue";
 
 export default {
   data() {
@@ -19,15 +17,15 @@ export default {
           class: "electric-animals",
           image: require("../../assets/illustrations/electric_animals/electric_animals-thumbnail.png"),
           url: "/illustration/electric-animals",
-          componentName: 'electricAnimalsContent'
+          componentName: "electricAnimalsContent"
         },
         {
           name: "le dragon",
           type: "book",
           class: "le-dragon",
-          image: require("../../assets/illustrations/le_dragon/le_dragon.png"),
+          image: require("../../assets/illustrations/le_dragon/dragon1.jpg"),
           url: "/illustration/electric-animals",
-          componentName: 'leDragonContent'
+          componentName: "leDragonContent"
         },
         {
           name: "la boom",
@@ -35,7 +33,7 @@ export default {
           class: "la-boom",
           image: require("../../assets/illustrations/la_boom/la_boom-cover.jpg"),
           url: "/illustration/la-boom",
-          componentName: 'laBoomContent'
+          componentName: "laBoomContent"
         },
         {
           name: "dessins de presse",
@@ -94,8 +92,7 @@ export default {
   components: {
     Art
   }
-}
+};
 </script>
 <style scoped>
-
 </style>

@@ -32,7 +32,11 @@
   <div class="galleryContainer">
     <div :key="JSON.stringify(categoryItem)" v-for="categoryItem in artCategories">
       <div style="margin: 15px;">
-        <div class="galleryCard" id="show-modal" @click="showModal(JSON.stringify(categoryItem)); selectComponent(categoryItem.componentName)">
+        <div
+          class="galleryCard"
+          id="show-modal"
+          @click="showModal(JSON.stringify(categoryItem)); selectComponent(categoryItem.componentName); mounted()"
+        >
           <img :src="categoryItem.image" alt>
         </div>
       </div>
@@ -41,13 +45,12 @@
         :id="'modal'+ JSON.stringify(categoryItem)"
         :category-item-class="categoryItem.class"
         v-show="openedModal === JSON.stringify(categoryItem)"
-        @close="openedModal = null"
+        @close="openedModal = null; destroyed()"
       >
-        
         <h3 slot="head-title" class="work-type">{{ categoryItem.type }}</h3>
         <h1 slot="head-title" class="work-name">{{ categoryItem.name }}</h1>
 
-        <component :is='selectedComponent'></component>
+        <component :is="selectedComponent"></component>
       </work-details-modal>
     </div>
   </div>
@@ -76,17 +79,32 @@ export default {
     leDragonContent: LeDragonContent
   },
   data() {
-    return { 
+    return {
       openedModal: null,
-      selectedComponent: ''
+      selectedComponent: "electricAnimalsContent"
     };
   },
   methods: {
     showModal(id) {
       this.openedModal = id;
     },
-    selectComponent(component){
+    selectComponent(component) {
       this.selectedComponent = component;
+    },
+    toggleBodyClass(addRemoveClass, className) {
+      const el = document.body;
+
+      if (addRemoveClass === "addClass") {
+        el.classList.add(className);
+      } else {
+        el.classList.remove(className);
+      }
+    },
+    mounted() {
+      this.toggleBodyClass("addClass", "no-scroll");
+    },
+    destroyed() {
+      this.toggleBodyClass("removeClass", "no-scroll");
     }
   }
 };
@@ -133,8 +151,8 @@ export default {
     transform: rotate(360deg);
   }
 }
-h3.work-type{
-    font-weight: 300;
+h3.work-type {
+  font-weight: 300;
 }
 .galleryContainer {
   display: flex;
