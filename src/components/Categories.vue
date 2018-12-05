@@ -38,6 +38,9 @@
           @click="showModal(JSON.stringify(categoryItem)); selectComponent(categoryItem.componentName); mounted()"
         >
           <img :src="categoryItem.image" alt>
+          <div class="dark-overlay">
+            <h1 class="hover-name">{{categoryItem.name}}</h1>
+          </div>
         </div>
       </div>
 
@@ -151,6 +154,25 @@ export default {
     transform: rotate(360deg);
   }
 }
+.dark-overlay h1.hover-name {
+  color: white;
+  align-self: center;
+  margin: 0 10px;
+}
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+}
 h3.work-type {
   font-weight: 300;
 }
@@ -172,6 +194,7 @@ h3.work-type {
   -webkit-transition: all 0.5s cubic-bezier(0.175, 1.2, 0.32, 1.275);
   -o-transition: all 0.5s cubic-bezier(0.175, 1.2, 0.32, 1.275);
   transition: all 0.5s cubic-bezier(0.175, 1.2, 0.32, 1.275);
+  position: relative;
 }
 .galleryCard:hover {
   -webkit-transform: scale(1.005);
@@ -179,6 +202,10 @@ h3.work-type {
   transform: scale(1.005);
   -webkit-box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+.galleryCard:hover .dark-overlay {
+  opacity: 1;
+  transition: all 0.2s;
 }
 .galleryContainer img {
   height: 60vh;
