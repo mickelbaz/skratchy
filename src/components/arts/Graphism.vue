@@ -16,14 +16,14 @@ export default {
           name: "cinquante degrés à l'ombre",
           type: "WAD Magazine",
           class: "wad-mag",
-          image: require("../../assets/graphism/wad.png"),
+          image: require("../../assets/graphism/wad.jpg"),
           url: "/illustration/electric-animals"
         },
         {
           name: "identité visuelle",
           type: "Restaurant",
           class: "restaurant",
-          image: require("../../assets/graphism/restaurant.png"),
+          image: require("../../assets/graphism/restaurant.jpg"),
           url: "/illustration/electric-animals"
         },
         {

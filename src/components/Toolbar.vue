@@ -6,11 +6,11 @@
       </router-link>
     </div>
     <div v-show="!aboutActive" class="about-button">
-      <button @click="handler(aboutActive = !aboutActive, mounted())">about</button>
+      <button @click="aboutActive = !aboutActive; mounted()">about</button>
     </div>
     <transition name="fade">
       <div v-show="aboutActive" class="about">
-        <div v-show="aboutActive" class="close-button" @click="handler(aboutActive = !aboutActive, destroyed())">
+        <div v-show="aboutActive" class="close-button" @click="aboutActive = !aboutActive; destroyed()">
           
             <img src="../assets/icons/close.svg" alt="">
         </div>

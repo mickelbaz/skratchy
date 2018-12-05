@@ -5,19 +5,19 @@
         <div class="close" @click="close()">
           <img src="../assets/icons/close.svg" alt>
         </div>
-        <div class="modal-container">
+        <div class="modal-container" :class="categoryItemClass">
           <div class="modal-header">
               <div class="head-title content-text">
                 <slot name="head-title">
                     <h3 class="work-type">Work type</h3>
                     <h1 class="work-name">Work name</h1>
                 </slot>
+                <hr>
               </div>
-              <hr>
           </div>
 
           <div class="modal-body">
-            <slot name="body">description</slot>
+            <slot>description</slot>
           </div>
 
           <div class="modal-footer back-button" @click="close()">
@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  props: ["id", "title", "isModalOpen"],
+  props: ["id", "title", "isModalOpen", "categoryItemClass"],
   methods: {
     close() {
       this.$emit("close");
@@ -49,10 +49,10 @@ export default {
   width: 100%;
   height: 100%;
   background-color: rgba(13, 14, 15, 0.9);
-  display: table;
+  display: flex;
   transition: opacity 0.3s ease;
+  overflow-y: auto;
 }
-
 .modal-wrapper {
   display: table-cell;
   vertical-align: top;
@@ -81,7 +81,7 @@ export default {
 }
 
 .content-text{
-    padding: 15px 30px 35px;
+    padding: 15px 30px 20px;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -99,6 +99,14 @@ export default {
 .modal-header h3.work-type {
   font-weight: 300;
   text-transform: uppercase;
+}
+hr{
+      color: #494a4d;
+    background-color: #494a4d;
+    height: 1px;
+    border: 0;
+    margin-bottom: 15px;
+    width: 100%;
 }
 
 .modal-body {

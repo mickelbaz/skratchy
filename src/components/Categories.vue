@@ -32,18 +32,22 @@
   <div class="galleryContainer">
     <div :key="JSON.stringify(categoryItem)" v-for="categoryItem in artCategories">
       <div style="margin: 15px;">
-        <div class="galleryCard" id="show-modal" @click="showModal(JSON.stringify(categoryItem))">
+        <div class="galleryCard" id="show-modal" @click="showModal(JSON.stringify(categoryItem)); selectComponent(categoryItem.componentName)">
           <img :src="categoryItem.image" alt>
         </div>
       </div>
 
       <work-details-modal
         :id="'modal'+ JSON.stringify(categoryItem)"
+        :category-item-class="categoryItem.class"
         v-show="openedModal === JSON.stringify(categoryItem)"
         @close="openedModal = null"
       >
+        
         <h3 slot="head-title" class="work-type">{{ categoryItem.type }}</h3>
         <h1 slot="head-title" class="work-name">{{ categoryItem.name }}</h1>
+
+        <component :is='selectedComponent'></component>
       </work-details-modal>
     </div>
   </div>
@@ -51,6 +55,9 @@
 
 <script>
 import WorkDetailsModal from "./WorkDetailsModal.vue";
+import ElectricAnimalsContent from "./arts/illustrations/ElectricAnimalsContent.vue";
+import LaBoomContent from "./arts/illustrations/LaBoomContent.vue";
+import LeDragonContent from "./arts/illustrations/LeDragonContent.vue";
 
 export default {
   props: ["artCategories"],
@@ -63,14 +70,23 @@ export default {
   //     sal();
   // }
   components: {
-    WorkDetailsModal
+    WorkDetailsModal,
+    electricAnimalsContent: ElectricAnimalsContent,
+    laBoomContent: LaBoomContent,
+    leDragonContent: LeDragonContent
   },
   data() {
-    return { openedModal: null };
+    return { 
+      openedModal: null,
+      selectedComponent: ''
+    };
   },
   methods: {
     showModal(id) {
       this.openedModal = id;
+    },
+    selectComponent(component){
+      this.selectedComponent = component;
     }
   }
 };
