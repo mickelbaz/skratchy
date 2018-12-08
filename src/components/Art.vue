@@ -75,6 +75,7 @@ export default {
     padding-left: 8%;
     font-size: 3rem;
     margin-top: 0;
+    transition: all 0.2s;
 }
 
 .art-content {
@@ -90,7 +91,17 @@ export default {
     right: 25px;
 }
 
-
+@media screen and (max-width: 768px){
+  .art-page h1.main-title{
+    text-align: center;
+    font-size: 2rem;
+    padding: 0;
+    transition: all 0.2s;
+  }
+  .art-page{
+    padding-top: 2em;
+  }
+}
 
 </style>
 

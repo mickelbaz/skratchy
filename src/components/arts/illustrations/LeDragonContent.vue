@@ -22,4 +22,10 @@ export default {
 img {
   height: 90vh;
 }
+@media only screen and (max-width: 414px){
+  img {
+    width: 100vw;
+    height: auto;
+  }
+}
 </style>

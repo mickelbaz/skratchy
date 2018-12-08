@@ -69,7 +69,7 @@ export default {
   background-color: #232425;
   border-radius: 4px;
   color: #fff;
-  overflow: hidden;
+  overflow-x: hidden;
   padding-bottom: 45px;
   position: absolute;
   left: 50%;
@@ -101,7 +101,7 @@ export default {
   text-transform: uppercase;
 }
 hr{
-      color: #494a4d;
+    color: #494a4d;
     background-color: #494a4d;
     height: 1px;
     border: 0;
@@ -178,6 +178,21 @@ hr{
 .modal-leave-active .modal-container {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+@media only screen and (max-width: 414px){
+  .modal-container{
+    height: auto;
+    width: 100vw;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #232425;
+    border-collapse: separate;
+    border-radius: 4px!important;
+    color: #fff;
+    overflow: hidden;
+    padding-bottom: 60px;
+    position: absolute;
+  }
 }
 </style>
 

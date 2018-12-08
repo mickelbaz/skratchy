@@ -1,21 +1,16 @@
 <template>
   <div class="homepage-content">
     <h1 class="name-title">{{ name }}</h1>
-    <div class="items">
-      <ul>
-        <li
-          :key="JSON.stringify(homepageItem)"
+    <div class="artsContainer">
+      <div :key="JSON.stringify(homepageItem)"
           v-for="homepageItem in homepageItems"
-          :class="homepageItem.name"
-          class="art"
-        >
-          <router-link :to="homepageItem.url">
-            <div class="thumbnail">
+          :class="homepageItem.name">
+        <div style="margin: 30px;">
+          <router-link :to="homepageItem.url" class="artCard">
               <img :src="homepageItem.coverImage" :alt="homepageItem.name">
-            </div>
           </router-link>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -57,41 +52,42 @@ h1.name-title {
 .homepage-content {
   padding-top: 20px;
 }
-img {
-  width: 335px;
+.artsContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
 }
-.art {
+.artCard{
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
   -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  width: auto;
+  height: auto;
   -webkit-transition: all 0.5s cubic-bezier(0.175, 1.2, 0.32, 1.275);
   -o-transition: all 0.5s cubic-bezier(0.175, 1.2, 0.32, 1.275);
   transition: all 0.5s cubic-bezier(0.175, 1.2, 0.32, 1.275);
+  position: relative;
 }
-.art:hover {
+.artCard:hover {
   -webkit-transform: scale(1.005);
   -ms-transform: scale(1.005);
   transform: scale(1.005);
   -webkit-box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
 }
-.items {
-  display: flex;
-  justify-content: space-around;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.artsContainer img {
+  height: 45vh;
+  transition: all 0.7s ease-in-out;
 }
-
-.items ul {
-  display: flex;
-  justify-content: space-around;
-  padding: 0;
-  width: 100%;
-  list-style-type: none;
-  margin: 0 35px 0 35px;
-}
-
-.items a {
-  height: 100%;
-  position: relative;
+@media only screen and (max-width: 414px){
+  .artsContainer img {
+  width: 90vw;
+  height: auto;
+  transition: all 0.7s ease-in-out;
+  }
 }
 </style>
