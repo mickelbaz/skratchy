@@ -46,7 +46,7 @@ export default {
 h1.name-title {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 54px;
+  font-size: 3rem;
   margin-top: 0;
 }
 .homepage-content {
@@ -83,7 +83,7 @@ h1.name-title {
   height: 45vh;
   transition: all 0.7s ease-in-out;
 }
-@media only screen and (max-width: 414px){
+@media screen and (max-width: 449px){
   .artsContainer img {
   width: 90vw;
   height: auto;

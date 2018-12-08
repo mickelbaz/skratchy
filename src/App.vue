@@ -21,6 +21,10 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,700");
 @import "(..)/node_modules/sal.js/dist/sal.css";
+body,
+html{
+  width: 100%
+}
 #app {
   font-family: "Work Sans", sans-serif;
   -webkit-font-smoothing: antialiased;

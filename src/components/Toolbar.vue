@@ -239,4 +239,9 @@ export default {
     transition: all .5s;
   } 
 }
+@media screen and (max-width: 449px){
+  .navbar {
+    padding: 20px;
+  }
+}
 </style>
