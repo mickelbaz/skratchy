@@ -3,8 +3,6 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import Homepage from './components/Homepage.vue'
 import Illustration from './components/arts/Illustration.vue'
-import ElectricAnimals from './components/arts/illustrations/ElectricAnimals.vue'
-import LaBoom from './components/arts/illustrations/LaBoom.vue'
 import Graphism from './components/arts/Graphism.vue'
 import Photography from './components/arts/Photography.vue'
 
@@ -17,15 +15,6 @@ const routes = [{
   {
     path: '/illustration',
     component: Illustration,
-  },
-  {
-    path: '/illustration/electric-animals',
-    component: ElectricAnimals
-
-  },
-  {
-    path: '/illustration/la-boom',
-    component: LaBoom
   },
   {
     path: '/graphism',

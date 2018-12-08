@@ -14,48 +14,48 @@ export default {
         name: "go back",
         img: require("../../../assets/icons/back.svg")
       },
-      electricAnimals: [
-        {
-          name: "lizard",
-          url: require("../../../assets/illustrations/electric_animals/lizard.jpg")
-        },
-        {
-          name: "ornithorhynchus",
-          url: require("../../../assets/illustrations/electric_animals/ornithorhynchus.jpg")
-        },
-        {
-          name: "bee",
-          url: require("../../../assets/illustrations/electric_animals/bee.jpg")
-        },
-        {
-          name: "leg",
-          url: require("../../../assets/illustrations/electric_animals/leg.jpg")
-        },
-        {
-          name: "morray",
-          url: require("../../../assets/illustrations/electric_animals/morray.jpg")
-        },
-        {
-          name: "morray2",
-          url: require("../../../assets/illustrations/electric_animals/morray2.jpg")
-        },
-        {
-          name: "elephant-fish",
-          url: require("../../../assets/illustrations/electric_animals/elephant-fish.jpg")
-        },
-        {
-          name: "jelly-fish",
-          url: require("../../../assets/illustrations/electric_animals/jelly-fish.jpg")
-        },
-        {
-          name: "hornet",
-          url: require("../../../assets/illustrations/electric_animals/hornet.jpg")
-        },
-        {
-          name: "gecko",
-          url: require("../../../assets/illustrations/electric_animals/gecko.jpg")
-        }
-      ]
+      // electricAnimals: [
+      //   {
+      //     name: "lizard",
+      //     url: require("../../../assets/illustrations/electric_animals/lizard.jpg")
+      //   },
+      //   {
+      //     name: "ornithorhynchus",
+      //     url: require("../../../assets/illustrations/electric_animals/ornithorhynchus.jpg")
+      //   },
+      //   {
+      //     name: "bee",
+      //     url: require("../../../assets/illustrations/electric_animals/bee.jpg")
+      //   },
+      //   {
+      //     name: "leg",
+      //     url: require("../../../assets/illustrations/electric_animals/leg.jpg")
+      //   },
+      //   {
+      //     name: "morray",
+      //     url: require("../../../assets/illustrations/electric_animals/morray.jpg")
+      //   },
+      //   {
+      //     name: "morray2",
+      //     url: require("../../../assets/illustrations/electric_animals/morray2.jpg")
+      //   },
+      //   {
+      //     name: "elephant-fish",
+      //     url: require("../../../assets/illustrations/electric_animals/elephant-fish.jpg")
+      //   },
+      //   {
+      //     name: "jelly-fish",
+      //     url: require("../../../assets/illustrations/electric_animals/jelly-fish.jpg")
+      //   },
+      //   {
+      //     name: "hornet",
+      //     url: require("../../../assets/illustrations/electric_animals/hornet.jpg")
+      //   },
+      //   {
+      //     name: "gecko",
+      //     url: require("../../../assets/illustrations/electric_animals/gecko.jpg")
+      //   }
+      // ]
     };
   }
 };
