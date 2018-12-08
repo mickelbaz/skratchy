@@ -14,7 +14,7 @@
           
             <img src="../assets/icons/close.svg" alt="">
         </div>
-        <h1>{{ aboutTitle }}</h1>
+        <h1 class="about-title">{{ aboutTitle }}</h1>
         <h1 class="name-title">{{ name }}</h1>
         <div class="info">
           <div class="column"></div>
@@ -175,16 +175,17 @@ export default {
   width: 25px;
 }
 
-
 .close-button button {
   color: white;
 }
-
+.about .about-title{
+  font-size: 1.5rem;
+}
 .about .name-title {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 54px;
-  margin-top: 50px;
+  font-size: 3rem;
+  margin-top: 72px;
 }
 
 .about .info {

@@ -179,6 +179,14 @@ hr{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+.modal-container.la-boom{
+  background-color: white;
+}
+.modal-container.le-loup{
+  background-color: rgb(0, 0, 0);
+}
+
 @media only screen and (max-width: 414px){
   .modal-container{
     height: auto;

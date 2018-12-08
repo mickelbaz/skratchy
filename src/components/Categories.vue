@@ -17,10 +17,10 @@
       <work-details-modal
         :id="'modal'+ JSON.stringify(categoryItem)"
         :category-item-class="categoryItem.class"
-        v-show="openedModal === JSON.stringify(categoryItem)"
+        v-if="openedModal === JSON.stringify(categoryItem)"
         @close="openedModal = null; destroyed()"
       >
-        <h3 slot="head-title" class="work-type">{{ categoryItem.type }}</h3>
+        <h2 slot="head-title" class="work-type">{{ categoryItem.type }}</h2>
         <h1 slot="head-title" class="work-name">{{ categoryItem.name }}</h1>
 
         <component :is="selectedComponent"></component>
@@ -30,10 +30,14 @@
 </template>
 
 <script>
+/* eslint-disable */
 import WorkDetailsModal from "./WorkDetailsModal.vue";
 import ElectricAnimalsContent from "./arts/illustrations/ElectricAnimalsContent.vue";
 import LaBoomContent from "./arts/illustrations/LaBoomContent.vue";
 import LeDragonContent from "./arts/illustrations/LeDragonContent.vue";
+import CaricatureContent from "./arts/illustrations/CaricatureContent.vue";
+import ObservationContent from "./arts/illustrations/ObservationContent.vue";
+import LeLoup from "./arts/illustrations/LeLoupContent.vue";
 import WadContent from "./arts/graphism/WadContent.vue";
 
 export default {
@@ -51,6 +55,9 @@ export default {
     electricAnimalsContent: ElectricAnimalsContent,
     laBoomContent: LaBoomContent,
     leDragonContent: LeDragonContent,
+    caricatureContent: CaricatureContent,
+    observationContent: ObservationContent,
+    leLoup: LeLoup,
     wadContent: WadContent
   },
   data() {
@@ -264,9 +271,19 @@ h3.work-type {
   font-size: 3em;
 }
 
-.modal-header h3.work-type {
+.modal-header h2.work-type {
   font-weight: 300;
   text-transform: uppercase;
+  margin-bottom: 0;
+}
+.la-boom .modal-header h1.work-name {
+  color: rgb(251, 76, 174);
+}
+.la-boom .modal-header h2.work-type {
+  color: rgb(94, 122, 182);
+}
+.le-loup .modal-header h1.work-name {
+  color: rgb(243, 161, 0)
 }
 </style>
 

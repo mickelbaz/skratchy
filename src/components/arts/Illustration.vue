@@ -44,8 +44,9 @@ export default {
         {
           name: "caricature",
           class: "caricature",
-          image: require("../../assets/illustrations/caricature/caricature.png"),
-          url: "/illustration/electric-animals"
+          image: require("../../assets/illustrations/caricature/caricature.jpg"),
+          url: "/illustration/electric-animals",
+          componentName: "caricatureContent"
         },
         {
           name: "croquis",
@@ -58,26 +59,25 @@ export default {
           name: "dessin d'observation",
           type: "",
           class: "observation-drawing",
-          image: require("../../assets/illustrations/electric_animals/electric_animals-thumbnail.png"),
-          url: "/illustration/electric-animals"
+          image: require("../../assets/illustrations/observation-drawing/observation-1.jpg"),
+          componentName: "observationContent"
         },
         {
           name: "hippocampe",
           type: "dessin d'observation",
           class: "seahorse",
-          image: require("../../assets/illustrations/electric_animals/electric_animals-thumbnail.png"),
-          url: "/illustration/electric-animals"
+          image: require("../../assets/illustrations/electric_animals/electric_animals-thumbnail.png")
         },
         {
-          name: "wolf",
-          class: "wolf",
-          image: require("../../assets/illustrations/wolf/wolf.png"),
-          url: "/illustration/electric-animals"
+          name: "le loup",
+          class: "le-loup",
+          image: require("../../assets/illustrations/wolf/le-loup.jpg"),
+          componentName: "leLoup"
         },
         {
           name: "thérapie taxi",
           class: "taxi",
-          image: require("../../assets/illustrations/wolf/wolf.png"),
+          image: require("../../assets/illustrations/wolf/le-loup.jpg"),
           url: "/illustration/electric-animals"
         },
         {
