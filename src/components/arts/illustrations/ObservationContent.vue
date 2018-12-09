@@ -1,5 +1,5 @@
 <template>
-  <div class="le-loup">
+  <div class="observation-drawings">
     <img src="../../../assets/illustrations/observation-drawing/observation-1.jpg" alt>
   </div>
 </template>

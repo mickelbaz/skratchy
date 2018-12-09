@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <toolbar/>
-    
+    <transition name="slide-fade" mode="out-in">
       <router-view></router-view>
-   
+    </transition>
   </div>
 </template>
 

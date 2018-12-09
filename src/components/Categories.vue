@@ -9,7 +9,7 @@
         >
           <img :src="categoryItem.image" alt>
           <div class="dark-overlay">
-            <h1 class="hover-name">{{categoryItem.name}}</h1>
+            <h2 class="hover-name">{{categoryItem.name}}</h2>
           </div>
         </div>
       </div>
@@ -133,7 +133,7 @@ export default {
     transform: rotate(360deg);
   }
 }
-.dark-overlay h1.hover-name {
+.dark-overlay h2.hover-name {
   color: white;
   align-self: center;
   margin: 0 10px;

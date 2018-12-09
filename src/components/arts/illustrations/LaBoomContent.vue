@@ -31,7 +31,13 @@ img {
   border: 1px solid rgb(0, 0, 0);
 }
 img.inside{
-  width: 90vw;
+  width: 75vw;
   height: auto;
+}
+@media only screen and (max-width: 768px){
+  img, img.inside {
+    width: 80vw;
+    height: auto;
+  }
 }
 </style>
