@@ -297,7 +297,7 @@ h3.work-type {
     height: 260px;
   } 
   .margin-around{
-    margin-bottom: 70px;
+    margin: 40px 0;
   }
 }
 </style>
