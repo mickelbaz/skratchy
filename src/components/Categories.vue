@@ -1,7 +1,7 @@
 <template>
   <div class="galleryContainer">
     <div :key="JSON.stringify(categoryItem)" v-for="categoryItem in artCategories">
-      <div style="margin: 30px;">
+      <div class="margin-around">
         <div
           class="galleryCard"
           id="show-modal"
@@ -35,9 +35,11 @@ import WorkDetailsModal from "./WorkDetailsModal.vue";
 import ElectricAnimalsContent from "./arts/illustrations/ElectricAnimalsContent.vue";
 import LaBoomContent from "./arts/illustrations/LaBoomContent.vue";
 import LeDragonContent from "./arts/illustrations/LeDragonContent.vue";
+import PressContent from "./arts/illustrations/PressContent.vue";
 import CaricatureContent from "./arts/illustrations/CaricatureContent.vue";
 import ObservationContent from "./arts/illustrations/ObservationContent.vue";
-import LeLoup from "./arts/illustrations/LeLoupContent.vue";
+import LeLoupContent from "./arts/illustrations/LeLoupContent.vue";
+import SeahorseContent from "./arts/illustrations/SeahorseContent.vue";
 import WadContent from "./arts/graphism/WadContent.vue";
 
 export default {
@@ -55,9 +57,11 @@ export default {
     electricAnimalsContent: ElectricAnimalsContent,
     laBoomContent: LaBoomContent,
     leDragonContent: LeDragonContent,
+    pressContent: PressContent,
     caricatureContent: CaricatureContent,
     observationContent: ObservationContent,
-    leLoup: LeLoup,
+    leLoupContent: LeLoupContent,
+    seahorseContent: SeahorseContent,
     wadContent: WadContent
   },
   data() {
@@ -187,8 +191,11 @@ h3.work-type {
   transition: all 0.2s;
 }
 .galleryContainer img {
-  height: 60vh;
+  height: 230px;
   transition: all 0.7s ease-in-out;
+}
+.margin-around{
+  margin: 30px;
 }
 .category {
   margin-bottom: 10em;
@@ -284,6 +291,14 @@ h3.work-type {
 }
 .le-loup .modal-header h1.work-name {
   color: rgb(243, 161, 0)
+}
+@media screen and (max-width: 768px){
+  .galleryContainer img{
+    height: 260px;
+  } 
+  .margin-around{
+    margin-bottom: 70px;
+  }
 }
 </style>
 

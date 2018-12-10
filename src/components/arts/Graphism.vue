@@ -45,7 +45,7 @@ export default {
           name: "liberty bell",
           type: "packaging",
           class: "liberty-bell",
-          image: require("../../assets/graphism/liberty-bell.png"),
+          image: require("../../assets/graphism/beer/liberty-thumbnail.jpg"),
           url: "/illustration/electric-animals"
         },
         {
@@ -59,7 +59,7 @@ export default {
           name: "que sais-je ?",
           type: "livre",
           class: "book-cover",
-          image: require("../../assets/graphism/liberty-bell.png"),
+          image: require("../../assets/graphism/book/know-thumbnail.jpg"),
           url: "/illustration/electric-animals"
         },
         {

@@ -5,9 +5,10 @@
       <div :key="JSON.stringify(homepageItem)"
           v-for="homepageItem in homepageItems"
           :class="homepageItem.name">
-        <div style="margin: 30px;">
+        <div class="margin-around">
           <router-link :to="homepageItem.url" class="artCard">
-              <img :src="homepageItem.coverImage" :alt="homepageItem.name">
+              <!-- <img :src="homepageItem.coverImage" :alt="homepageItem.name"> -->
+              <h2>{{ homepageItem.name }}</h2>
           </router-link>
         </div>
       </div>
@@ -22,17 +23,27 @@ export default {
       name: "Clara Delahaye",
       homepageItems: [
         {
-          name: "illustration",
+          name: "illustrations",
           url: "/illustration",
           coverImage: require("../assets/illustrations.png")
         },
         {
-          name: "graphism",
+          name: "arts graphiques",
           url: "/graphism",
           coverImage: require("../assets/graphism.png")
         },
         {
-          name: "photography",
+          name: "projet de licence",
+          url: "/graphism",
+          coverImage: require("../assets/graphism.png")
+        },
+        {
+          name: "photographies",
+          url: "/photography",
+          coverImage: require("../assets/photography.png")
+        },
+        {
+          name: "typographies",
           url: "/photography",
           coverImage: require("../assets/photography.png")
         }
@@ -83,11 +94,17 @@ h1.name-title {
   height: 45vh;
   transition: all 0.7s ease-in-out;
 }
+.margin-around{
+  margin: 30px;
+}
 @media screen and (max-width: 449px){
   .artsContainer img {
   width: 90vw;
   height: auto;
   transition: all 0.7s ease-in-out;
+  }
+  .margin-around{
+    margin: 0 0 50px 0;
   }
 }
 </style>

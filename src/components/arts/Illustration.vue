@@ -12,14 +12,6 @@ export default {
       mainTitle: "Illustrations_",
       illustrationCategories: [
         {
-          name: "electric animals",
-          type: "licence project",
-          class: "electric-animals",
-          image: require("../../assets/illustrations/electric_animals/electric_animals-thumbnail.png"),
-          url: "/illustration/electric-animals",
-          componentName: "electricAnimalsContent"
-        },
-        {
           name: "le dragon",
           type: "book",
           class: "le-dragon",
@@ -38,8 +30,9 @@ export default {
         {
           name: "dessins de presse",
           class: "press-drawings",
-          image: require("../../assets/illustrations/press/press-thumbnail.png"),
-          url: "/illustration/electric-animals"
+          image: require("../../assets/illustrations/press/press-thumbnail.jpg"),
+          url: "/illustration/electric-animals",
+          componentName: "pressContent"
         },
         {
           name: "caricature",
@@ -52,7 +45,7 @@ export default {
           name: "croquis",
           type: "",
           class: "sketches",
-          image: require("../../assets/illustrations/electric_animals/electric_animals-thumbnail.png"),
+          image: require("../../assets/illustrations/sketches/sketch-thumbnail.jpg"),
           url: "/illustration/electric-animals"
         },
         {
@@ -66,18 +59,19 @@ export default {
           name: "hippocampe",
           type: "dessin d'observation",
           class: "seahorse",
-          image: require("../../assets/illustrations/electric_animals/electric_animals-thumbnail.png")
+          image: require("../../assets/illustrations/observation-drawing/seahorse-thumbnail.jpg"),
+          componentName: "seahorseContent"
         },
         {
           name: "le loup",
           class: "le-loup",
           image: require("../../assets/illustrations/wolf/le-loup.jpg"),
-          componentName: "leLoup"
+          componentName: "leLoupContent"
         },
         {
           name: "thérapie taxi",
           class: "taxi",
-          image: require("../../assets/illustrations/wolf/le-loup.jpg"),
+          image: require("../../assets/illustrations/therapie-taxi/therapie-thumbnail.jpg"),
           url: "/illustration/electric-animals"
         },
         {
