@@ -40,6 +40,7 @@ import CaricatureContent from "./arts/illustrations/CaricatureContent.vue";
 import ObservationContent from "./arts/illustrations/ObservationContent.vue";
 import LeLoupContent from "./arts/illustrations/LeLoupContent.vue";
 import SeahorseContent from "./arts/illustrations/SeahorseContent.vue";
+import TherapieContent from "./arts/illustrations/TherapieContent.vue";
 import WadContent from "./arts/graphism/WadContent.vue";
 
 export default {
@@ -62,6 +63,7 @@ export default {
     observationContent: ObservationContent,
     leLoupContent: LeLoupContent,
     seahorseContent: SeahorseContent,
+    therapieContent: TherapieContent,
     wadContent: WadContent
   },
   data() {
@@ -291,6 +293,12 @@ h3.work-type {
 }
 .le-loup .modal-header h1.work-name {
   color: rgb(243, 161, 0)
+}
+.wad-mag .modal-header h1.work-name {
+  color: rgb(0, 0, 0);
+}
+.wad-mag .modal-header h2.work-type {
+  color: rgb(51, 51, 51);
 }
 @media screen and (max-width: 768px){
   .galleryContainer img{

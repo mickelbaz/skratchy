@@ -1,0 +1,21 @@
+<template>
+  <div class="therapie-content">
+    <img src="../../../assets/illustrations/therapie-taxi/therapie.jpg" alt>
+  </div>
+</template>
+
+<script>
+export default {
+};
+</script>
+
+<style scoped>
+img {
+  width: 75vw;
+}
+@media only screen and (max-width: 414px){
+    img {
+        width: 100vw;
+    }
+}
+</style>

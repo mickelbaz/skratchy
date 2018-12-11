@@ -11,7 +11,7 @@ export default {
   data() {
     return {
       artName: "photography",
-      mainTitle: "Photography_",
+      mainTitle: "Photographies",
       photographyCategories: [{
           name: "portraits",
           type: "",

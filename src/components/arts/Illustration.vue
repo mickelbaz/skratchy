@@ -72,7 +72,7 @@ export default {
           name: "thérapie taxi",
           class: "taxi",
           image: require("../../assets/illustrations/therapie-taxi/therapie-thumbnail.jpg"),
-          url: "/illustration/electric-animals"
+          componentName: "therapieContent"
         },
         {
           name: "sin city",

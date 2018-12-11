@@ -186,6 +186,9 @@ hr{
 .modal-container.le-loup{
   background-color: rgb(0, 0, 0);
 }
+.modal-container.wad-mag{
+  background-color: #999999;
+}
 
 @media only screen and (max-width: 414px){
   .modal-container{

@@ -34,7 +34,7 @@ export default {
         },
         {
           name: "projet de licence",
-          url: "/graphism",
+          url: "/licence-project",
           coverImage: require("../assets/graphism.png")
         },
         {

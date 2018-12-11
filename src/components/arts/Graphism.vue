@@ -11,7 +11,7 @@ export default {
   data() {
     return {
       artName: "graphism",
-      mainTitle: "Graphism_",
+      mainTitle: "Arts_Graphiques",
       graphismCategories: [{
           name: "cinquante degrés à l'ombre",
           type: "WAD Magazine",
