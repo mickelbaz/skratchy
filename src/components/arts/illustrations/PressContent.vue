@@ -1,11 +1,11 @@
 <template>
-  <div class="press">
+  <div class="press-content">
       <div class="cover-paper">
-        <img src="../../../assets/illustrations/press/press-thumbnail.jpg" alt>
+        <img src="../../../assets/illustrations/press/press-thumbnail.jpg" alt="Paper cover">
       </div>
     <div class="inside-paper">
-        <img src="../../../assets/illustrations/press/paper1.jpg" alt>
-        <img src="../../../assets/illustrations/press/paper2.jpg" alt>
+        <img src="../../../assets/illustrations/press/paper1.jpg" alt="Paper first page">
+        <img src="../../../assets/illustrations/press/paper2.jpg" alt="Paper second page">
     </div>
   </div>
 </template>

@@ -44,7 +44,11 @@ import TherapieContent from "./arts/illustrations/TherapieContent.vue";
 import WadContent from "./arts/graphism/WadContent.vue";
 
 export default {
-  props: ["artCategories"],
+  props: {
+    "artCategories": {
+      type: String
+    }
+  },
   // data(){
   //     return{
   //         currStep: null

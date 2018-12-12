@@ -31,7 +31,20 @@
 
 <script>
 export default {
-  props: ["id", "title", "isModalOpen", "categoryItemClass"],
+  props: {
+    "id": {
+      type: String
+    },
+    "title": {
+      type: String
+    },
+    "isModalOpen": {
+      type: Boolean
+    },
+    "categoryItemClass": {
+      type: String
+    }
+  },
   methods: {
     close() {
       this.$emit("close");

@@ -1,6 +1,6 @@
 <template>
   <div class="therapie-content">
-    <img src="../../../assets/illustrations/therapie-taxi/therapie.jpg" alt>
+    <img src="../../../assets/illustrations/therapie-taxi/therapie.jpg" alt="Therapie Taxi cover">
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
-  <div class="seahorse">
-    <img src="../../../assets/illustrations/observation-drawing/seahorse.jpg" alt>
+  <div class="seahorse-content">
+    <img src="../../../assets/illustrations/observation-drawing/seahorse.jpg" alt="Seahorse full">
   </div>
 </template>
 

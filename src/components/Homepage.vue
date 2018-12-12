@@ -1,13 +1,12 @@
 <template>
   <div class="homepage-content">
-    <h1 class="name-title">{{ name }}</h1>
+    <h1 class="name-title">Clara Delahaye</h1>
     <div class="artsContainer">
       <div :key="JSON.stringify(homepageItem)"
           v-for="homepageItem in homepageItems"
           :class="homepageItem.name">
         <div class="margin-around">
           <router-link :to="homepageItem.url" class="artCard">
-              <!-- <img :src="homepageItem.coverImage" :alt="homepageItem.name"> -->
               <h2>{{ homepageItem.name }}</h2>
           </router-link>
         </div>
@@ -20,7 +19,6 @@
 export default {
   data() {
     return {
-      name: "Clara Delahaye",
       homepageItems: [
         {
           name: "illustrations",

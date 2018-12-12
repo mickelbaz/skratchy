@@ -12,7 +12,17 @@
 import Categories from './Categories.vue';
 
 export default {
-    props: ['artName', 'mainTitle', 'artCategories'],
+    props: {
+        'artName': {
+            type: String
+        },
+        'mainTitle': {
+            type: String
+        },
+        'artCategories': {
+            type: String
+        }
+    },
     components: {
         Categories
     },

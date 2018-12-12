@@ -1,9 +1,8 @@
 <template>
-  <div class="la-boom">
-    <!-- <h1>{{ titlePage }}</h1> -->
-    <img src="../../../assets/illustrations/la_boom/la_boom-cover.jpg" alt>
-    <img src="../../../assets/illustrations/la_boom/la_boom-inside.jpg" class="inside" alt>
-    <img src="../../../assets/illustrations/la_boom/la_boom-back.jpg" alt>
+  <div class="la-boom-content">
+    <img src="../../../assets/illustrations/la_boom/la_boom-cover.jpg" alt="La Boom cover">
+    <img src="../../../assets/illustrations/la_boom/la_boom-inside.jpg" class="inside" alt="La Boom inside">
+    <img src="../../../assets/illustrations/la_boom/la_boom-back.jpg" alt="La Boom back">
   </div>
 </template>
 

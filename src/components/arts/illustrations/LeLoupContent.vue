@@ -1,6 +1,6 @@
 <template>
-  <div class="le-loup">
-    <img src="../../../assets/illustrations/wolf/le-loup.jpg" alt>
+  <div class="le-loup-content">
+    <img src="../../../assets/illustrations/wolf/le-loup.jpg" alt="Le Loup">
   </div>
 </template>
 
