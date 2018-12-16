@@ -29,6 +29,6 @@ export default {
     height: 90vh;
 }
 .inside-paper img {
-  height: 100vh;
+  width: 50%;
 }
 </style>

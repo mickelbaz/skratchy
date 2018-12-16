@@ -15,7 +15,7 @@ img {
 }
 @media only screen and (max-width: 414px){
     img {
-        width: 100vw;
+        width: 100%;
     }
 }
 </style>

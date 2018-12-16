@@ -46,7 +46,7 @@ export default {
           type: "",
           class: "sketches",
           image: require("../../assets/illustrations/sketches/sketch-thumbnail.jpg"),
-          url: "/illustration/electric-animals"
+          componentName: "sketchesContent"
         },
         {
           name: "dessin d'observation",

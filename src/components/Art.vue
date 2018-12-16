@@ -20,7 +20,7 @@ export default {
             type: String
         },
         'artCategories': {
-            type: String
+            type: Array
         }
     },
     components: {
@@ -77,6 +77,8 @@ export default {
 .art-page {
     display: flex;
     flex-direction: column;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .art-page h1.main-title {
@@ -89,8 +91,6 @@ export default {
 }
 
 .art-content {
-    padding-left: 8%;
-    padding-right: 8%;
     position: relative;
 }
 

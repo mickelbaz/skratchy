@@ -1,6 +1,6 @@
 <template>
   <div class="la-boom-content">
-    <img src="../../../assets/illustrations/la_boom/la_boom-cover.jpg" alt="La Boom cover">
+    <img src="../../../assets/illustrations/la_boom/la_boom-cover-full.jpg" alt="La Boom cover">
     <img src="../../../assets/illustrations/la_boom/la_boom-inside.jpg" class="inside" alt="La Boom inside">
     <img src="../../../assets/illustrations/la_boom/la_boom-back.jpg" alt="La Boom back">
   </div>
@@ -30,7 +30,7 @@ img {
   border: 1px solid rgb(0, 0, 0);
 }
 img.inside{
-  width: 75vw;
+  width: 95%;
   height: auto;
 }
 @media only screen and (max-width: 768px){

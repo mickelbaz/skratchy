@@ -200,7 +200,24 @@ hr{
   background-color: rgb(0, 0, 0);
 }
 .modal-container.wad-mag{
-  background-color: #999999;
+  background-color: rgb(206,	206,	206)	;
+}
+.modal-container.restaurant{
+  background-color: white;
+}
+.modal-container.moma{
+  background-color: white;
+}
+.modal-container.liberty-bell{
+  background-color: white;
+}
+.la-boom .back-button{
+  background-color: rgb(94, 122, 182);
+  color: rgb(255,	253,	118);
+}
+.la-boom .back-button:hover{
+  background-color: rgb(252, 77, 175);
+  color: rgb(255,	253,	118);
 }
 
 @media only screen and (max-width: 414px){

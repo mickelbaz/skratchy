@@ -21,6 +21,11 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,700");
 @import "(..)/node_modules/sal.js/dist/sal.css";
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
 #app {
   font-family: "Work Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -28,8 +33,6 @@ export default {
   text-align: center;
   color: black;
   margin-top: 112px;
-  padding-right: 25px;
-  padding-left: 25px;
   margin-right: auto;
   margin-left: auto;
 }

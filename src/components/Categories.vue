@@ -37,16 +37,26 @@ import LaBoomContent from "./arts/illustrations/LaBoomContent.vue";
 import LeDragonContent from "./arts/illustrations/LeDragonContent.vue";
 import PressContent from "./arts/illustrations/PressContent.vue";
 import CaricatureContent from "./arts/illustrations/CaricatureContent.vue";
+import SketchesContent from "./arts/illustrations/SketchesContent.vue";
 import ObservationContent from "./arts/illustrations/ObservationContent.vue";
 import LeLoupContent from "./arts/illustrations/LeLoupContent.vue";
 import SeahorseContent from "./arts/illustrations/SeahorseContent.vue";
 import TherapieContent from "./arts/illustrations/TherapieContent.vue";
 import WadContent from "./arts/graphism/WadContent.vue";
+import RestaurantContent from "./arts/graphism/RestaurantContent.vue";
+import BenettonContent from "./arts/graphism/BenettonContent.vue";
+import MomaContent from "./arts/graphism/MomaContent.vue";
+import BeerContent from "./arts/graphism/BeerContent.vue";
+import KnowledgeContent from "./arts/graphism/KnowledgeContent.vue";
+import PortraitsContent from "./arts/photographies/PortraitsContent.vue";
+import MongoliaContent from "./arts/photographies/MongoliaContent.vue";
+import DanceContent from "./arts/photographies/DanceContent.vue";
+import NyContent from "./arts/photographies/NyContent.vue";
 
 export default {
   props: {
     "artCategories": {
-      type: String
+      type: Array
     }
   },
   // data(){
@@ -64,11 +74,21 @@ export default {
     leDragonContent: LeDragonContent,
     pressContent: PressContent,
     caricatureContent: CaricatureContent,
+    sketchesContent: SketchesContent,
     observationContent: ObservationContent,
     leLoupContent: LeLoupContent,
     seahorseContent: SeahorseContent,
     therapieContent: TherapieContent,
-    wadContent: WadContent
+    wadContent: WadContent,
+    restaurantContent: RestaurantContent,
+    benettonContent: BenettonContent,
+    momaContent: MomaContent,
+    beerContent: BeerContent,
+    knowledgeContent: KnowledgeContent,
+    portraitsContent: PortraitsContent,
+    mongoliaContent: MongoliaContent,
+    danceContent: DanceContent,
+    nyContent: NyContent
   },
   data() {
     return {
@@ -304,6 +324,25 @@ h3.work-type {
 .wad-mag .modal-header h2.work-type {
   color: rgb(51, 51, 51);
 }
+.restaurant .modal-header h1.work-name {
+  color: rgb(37, 43, 130);
+}
+.restaurant .modal-header h2.work-type {
+  color: rgb(51, 51, 51);
+}
+.moma .modal-header h1.work-name {
+  color: black;
+}
+.moma .modal-header h2.work-type {
+  color: black;
+}
+.liberty-bell .modal-header h1.work-name {
+  color: rgb(248, 191, 119);
+}
+.liberty-bell .modal-header h2.work-type {
+  color: black;
+}
+
 @media screen and (max-width: 768px){
   .galleryContainer img{
     height: 260px;

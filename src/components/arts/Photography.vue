@@ -16,22 +16,22 @@ export default {
           name: "portraits",
           type: "",
           class: "portraits",
-          image: require("../../assets/photographies/portrait.png"),
-          url: "/illustration/electric-animals"
+          image: require("../../assets/photographies/portraits/portraits-thumbnail.jpg"),
+          componentName: "portraitsContent"
         },
         {
           name: "mongolie",
           type: "",
           class: "mongolia",
-          image: require("../../assets/photographies/mongolia.png"),
-          url: "/illustration/electric-animals"
+          image: require("../../assets/photographies/mongolia/mongolia-thumbnail.jpg"),
+          componentName: "mongoliaContent"
         },
         {
           name: "danse",
           type: "",
           class: "dance",
-          image: require("../../assets/photographies/mongolia.png"),
-          url: "/illustration/electric-animals"
+          image: require("../../assets/photographies/dance/dance-thumbnail.jpg"),
+          componentName: "danceContent"
         },
         {
           name: "poser un lapin",
@@ -51,8 +51,8 @@ export default {
           name: "new york",
           type: "",
           class: "nyc",
-          image: require("../../assets/photographies/mongolia.png"),
-          url: "/illustration/electric-animals"
+          image: require("../../assets/photographies/ny/ny-thumbnail.jpg"),
+          componentName: "nyContent"
         }
       ]
     };

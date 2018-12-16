@@ -25,28 +25,28 @@ export default {
           type: "Restaurant",
           class: "restaurant",
           image: require("../../assets/graphism/restaurant.jpg"),
-          url: "/illustration/electric-animals"
+          componentName: "restaurantContent"
         },
         {
           name: "united movement of benetton",
           type: "benetton",
           class: "benetton",
           image: require("../../assets/graphism/benetton.png"),
-          url: "/illustration/electric-animals"
+          componentName: "benettonContent"
         },
         {
           name: "moma",
           type: "typography",
           class: "moma",
           image: require("../../assets/graphism/moma.png"),
-          url: "/illustration/electric-animals"
+          componentName: "momaContent"
         },
         {
           name: "liberty bell",
           type: "packaging",
           class: "liberty-bell",
           image: require("../../assets/graphism/beer/liberty-thumbnail.jpg"),
-          url: "/illustration/electric-animals"
+          componentName: "beerContent"
         },
         {
           name: "agence de voyage",
@@ -58,9 +58,9 @@ export default {
         {
           name: "que sais-je ?",
           type: "livre",
-          class: "book-cover",
+          class: "knowledge",
           image: require("../../assets/graphism/book/know-thumbnail.jpg"),
-          url: "/illustration/electric-animals"
+          componentName: "knowledgeContent"
         },
         {
           name: "basalte",

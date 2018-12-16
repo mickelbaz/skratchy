@@ -1,5 +1,5 @@
 <template>
-  <div class="caricature">
+  <div class="caricature-content">
     <img src="../../../assets/illustrations/caricature/caricature.jpg" alt="caricature">
   </div>
 </template>
@@ -11,7 +11,6 @@ export default {
 
 <style scoped>
 img {
-  height: 80vh;
-  border: 1px solid rgb(0, 0, 0);
+  height: 90vh;
 }
 </style>
