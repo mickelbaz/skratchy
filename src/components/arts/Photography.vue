@@ -37,15 +37,13 @@ export default {
           name: "poser un lapin",
           type: "",
           class: "rabbit",
-          image: require("../../assets/photographies/mongolia.png"),
-          url: "/illustration/electric-animals"
+          image: require("../../assets/photographies/mongolia/mongolia-thumbnail.jpg")
         },
         {
           name: "le mouvement",
           type: "",
           class: "movement",
-          image: require("../../assets/photographies/mongolia.png"),
-          url: "/illustration/electric-animals"
+          image: require("../../assets/photographies/mongolia/mongolia-thumbnail.jpg")
         },
         {
           name: "new york",

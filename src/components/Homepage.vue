@@ -57,28 +57,23 @@ export default {
       homepageItems: [
         {
           name: "illustration",
-          url: "/illustration",
-          coverImage: require("../assets/illustrations.png")
+          url: "/illustration"
         },
         {
           name: "art graphique",
-          url: "/graphism",
-          coverImage: require("../assets/graphism.png")
+          url: "/graphism"
         },
         {
           name: "projet de licence",
-          url: "/licence-project",
-          coverImage: require("../assets/graphism.png")
+          url: "/licence-project"
         },
         {
           name: "photographie",
-          url: "/photography",
-          coverImage: require("../assets/photography.png")
+          url: "/photography"
         },
         {
           name: "typographie",
-          url: "/photography",
-          coverImage: require("../assets/photography.png")
+          url: "/photography"
         }
       ]
     };

@@ -35,44 +35,6 @@ export default {
 </script>
 
 <style scoped>
-@keyframes bounceLeft {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-15px);
-    }
-}
-
-@keyframes bounceRight {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(15px);
-    }
-}
-
-@-moz-keyframes spin {
-    100% {
-        -moz-transform: rotate(360deg);
-    }
-}
-
-@-webkit-keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
 
 .art-page {
     display: flex;

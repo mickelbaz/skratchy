@@ -2,7 +2,7 @@
   <div class="navbar">
     <div class="logo">
       <router-link to="/">
-        <img src="../assets/logo.png" alt="">
+        <img src="../assets/clara.png" alt="">
       </router-link>
     </div>
     <div v-show="!aboutActive" class="about-button">

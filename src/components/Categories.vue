@@ -351,5 +351,10 @@ h3.work-type {
     margin: 40px 0;
   }
 }
+@media screen and (max-width: 414px){
+  .galleryContainer img{
+    height: 220px;
+  }
+}
 </style>
 
