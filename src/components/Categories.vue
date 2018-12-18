@@ -2,27 +2,20 @@
   <div class="galleryContainer">
     <div :key="JSON.stringify(categoryItem)" v-for="categoryItem in artCategories">
       <div class="margin-around">
-        <div
-          class="galleryCard"
-          id="show-modal"
-          @click="showModal(JSON.stringify(categoryItem)); selectComponent(categoryItem.componentName); mounted()"
-        >
+        <div class="galleryCard" id="show-modal" @click="handleClick(categoryItem)">
           <img :src="categoryItem.image" alt>
           <div class="dark-overlay">
             <h2 class="hover-name">{{categoryItem.name}}</h2>
           </div>
         </div>
       </div>
-
       <work-details-modal
         :id="'modal'+ JSON.stringify(categoryItem)"
         :category-item-class="categoryItem.class"
         v-if="openedModal === JSON.stringify(categoryItem)"
-        @close="openedModal = null; destroyed()"
-      >
+        @close="handleClose()">
         <h2 slot="head-title" class="work-type">{{ categoryItem.type }}</h2>
         <h1 slot="head-title" class="work-name">{{ categoryItem.name }}</h1>
-
         <component :is="selectedComponent"></component>
       </work-details-modal>
     </div>
@@ -55,18 +48,10 @@ import NyContent from "./arts/photographies/NyContent.vue";
 
 export default {
   props: {
-    "artCategories": {
+    artCategories: {
       type: Array
     }
   },
-  // data(){
-  //     return{
-  //         currStep: null
-  //     };
-  // },
-  // mounted() {
-  //     sal();
-  // }
   components: {
     WorkDetailsModal,
     electricAnimalsContent: ElectricAnimalsContent,
@@ -106,24 +91,32 @@ export default {
     toggleBodyClass(addRemoveClass, className) {
       const el = document.body;
 
-      if (addRemoveClass === "addClass") {
+      if (addRemoveClass === 'addClass') {
         el.classList.add(className);
       } else {
         el.classList.remove(className);
       }
     },
+    handleClick(categoryItem) {
+      this.showModal(JSON.stringify(categoryItem));
+      this.selectComponent(categoryItem.componentName);
+      this.toggleBodyClass('addClass', 'no-scroll');
+    },
+    handleClose() {
+      this.openedModal = null;
+      this.toggleBodyClass('removeClass', 'no-scroll');
+    },
     mounted() {
-      this.toggleBodyClass("addClass", "no-scroll");
+      this.toggleBodyClass('addClass', 'no-scroll');
     },
     destroyed() {
-      this.toggleBodyClass("removeClass", "no-scroll");
+      this.toggleBodyClass('removeClass', 'no-scroll');
     }
   }
 };
 </script>
 
 <style scoped>
-/* @import '../assets/css/sal.css'; */
 
 @keyframes bounceLeft {
   0% {

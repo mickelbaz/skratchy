@@ -32,22 +32,22 @@
 <script>
 export default {
   props: {
-    "id": {
-      type: String
+    id: {
+      type: String,
     },
-    "title": {
-      type: String
+    title: {
+      type: String,
     },
-    "isModalOpen": {
-      type: Boolean
+    isModalOpen: {
+      type: Boolean,
     },
-    "categoryItemClass": {
-      type: String
+    categoryItemClass: {
+      type: String,
     }
   },
   methods: {
     close() {
-      this.$emit("close");
+      this.$emit('close');
     }
   }
 };
