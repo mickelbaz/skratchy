@@ -1,19 +1,8 @@
 <template>
   <div class="homepage-content">
     <div class="art-grid">
-
-    
     <h1 class="name-title">Clara Delahaye</h1>
     <div class="artsContainer">
-      <!-- <div :key="JSON.stringify(homepageItem)"
-          v-for="homepageItem in homepageItems"
-          :class="homepageItem.name">
-        <div class="margin-around">
-          <router-link :to="homepageItem.url" class="artCard">
-              <h2>{{ homepageItem.name }}</h2>
-          </router-link>
-        </div>
-      </div> -->
       <div class="left-arts arts-block">
         <router-link to="/illustration">
           <div class="illustrations art-block">

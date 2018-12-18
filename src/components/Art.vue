@@ -1,7 +1,7 @@
 <template>
 <div :class="artName" class="art-page">
-    <h1 :class="[artName + ' main-title']" class="main-title">{{ mainTitle }}</h1>
-    <div :class="[artName + ' -content']" class="art-content">
+    <h1 :class="[`${artName} main-title`]" class="main-title">{{ mainTitle }}</h1>
+    <div :class="[`${artName} content`]" class="art-content">
         <categories :art-categories="artCategories"></categories>
     </div>
 
@@ -13,20 +13,20 @@ import Categories from './Categories.vue';
 
 export default {
     props: {
-        'artName': {
+        artName: {
             type: String
         },
-        'mainTitle': {
+        mainTitle: {
             type: String
         },
-        'artCategories': {
+        artCategories: {
             type: Array
         }
     },
     components: {
         Categories
     },
-    data(){
+    data() {
         return{
             showModal: false
         };
@@ -35,7 +35,6 @@ export default {
 </script>
 
 <style scoped>
-
 .art-page {
     display: flex;
     flex-direction: column;
@@ -74,6 +73,5 @@ export default {
     padding-top: 2em;
   }
 }
-
 </style>
 

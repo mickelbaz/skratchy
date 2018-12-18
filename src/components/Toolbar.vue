@@ -5,14 +5,13 @@
         <img src="../assets/clara.png" alt="">
       </router-link>
     </div>
-    <div v-show="!aboutActive" class="about-button">
-      <button @click="aboutActive = !aboutActive; mounted()">about</button>
+    <div v-show="!isAboutActive" class="about-button">
+      <button @click="handleButtonClick()">about</button>
     </div>
     <transition name="fade">
-      <div v-show="aboutActive" class="about">
-        <div v-show="aboutActive" class="close-button" @click="aboutActive = !aboutActive; destroyed()">
-          
-            <img src="../assets/icons/close.svg" alt="">
+      <div v-show="isAboutActive" class="about">
+        <div v-show="isAboutActive" class="close-button" @click="handleClose()">
+          <img src="../assets/icons/close.svg" alt="">
         </div>
         <h1 class="about-title">{{ aboutTitle }}</h1>
         <h1 class="name-title">{{ name }}</h1>
@@ -24,7 +23,6 @@
             </a>
           </div>
         </div>
-
         <div class="social-networks">
           <ul class="social-networks-list">
             <li :key="JSON.stringify(socialNetwork)" v-for="socialNetwork in socialNetworks">
@@ -44,7 +42,7 @@ export default {
   data() {
     return {
       name: "Clara Delahaye",
-      aboutActive: false,
+      isAboutActive: false,
       aboutTitle: "about",
       emailTitle: "email me!",
       socialNetworks: [{
@@ -69,6 +67,17 @@ export default {
       } else {
         el.classList.remove(className);
       }
+    },
+    toggleIsAboutActive() {
+      this.isAboutActive = !this.isAboutActive;
+    },
+    handleButtonClick() {
+      this.toggleIsAboutActive();
+      this.toggleBodyClass('addClass', 'no-scroll');
+    },
+    handleClose() {
+      this.toggleIsAboutActive();
+      this.toggleBodyClass('removeClass', 'no-scroll');
     },
     mounted() {
       this.toggleBodyClass('addClass', 'no-scroll');
@@ -102,7 +111,6 @@ export default {
 
 .navbar ul {
   list-style-type: none;
-  display: inline;
   margin-right: 20px;
   display: flex;
   align-items: center;
