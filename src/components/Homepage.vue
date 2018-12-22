@@ -27,7 +27,7 @@
         </router-link>
       </div>
       <div class="center-art arts-block">
-          <router-link to="/illustration">
+          <router-link to="/licence-project">
             <div class="licence-project art-block">
               <h3>projet de licence</h3>
             </div>

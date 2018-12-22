@@ -24,7 +24,7 @@ export default {
           name: "identité visuelle",
           type: "Restaurant",
           class: "restaurant",
-          image: require("../../assets/graphism/restaurant.jpg"),
+          image: require("../../assets/graphism/restaurant/restaurant-thumbnail.jpg"),
           componentName: "restaurantContent"
         },
         {

@@ -15,30 +15,26 @@ export default {
           name: "le dragon",
           type: "book",
           class: "le-dragon",
-          image: require("../../assets/illustrations/le_dragon/dragon1.jpg"),
-          url: "/illustration/electric-animals",
+          image: require("../../assets/illustrations/le_dragon/le_dragon-thumbnail.jpg"),
           componentName: "leDragonContent"
         },
         {
           name: "la boom",
           type: "vinyl",
           class: "la-boom",
-          image: require("../../assets/illustrations/la_boom/la_boom-cover.jpg"),
-          url: "/illustration/la-boom",
+          image: require("../../assets/illustrations/la_boom/la_boom-thumbnail.jpg"),
           componentName: "laBoomContent"
         },
         {
           name: "dessins de presse",
           class: "press-drawings",
           image: require("../../assets/illustrations/press/press-thumbnail.jpg"),
-          url: "/illustration/electric-animals",
           componentName: "pressContent"
         },
         {
           name: "caricature",
           class: "caricature",
           image: require("../../assets/illustrations/caricature/caricature.jpg"),
-          url: "/illustration/electric-animals",
           componentName: "caricatureContent"
         },
         {
@@ -65,7 +61,7 @@ export default {
         {
           name: "le loup",
           class: "le-loup",
-          image: require("../../assets/illustrations/wolf/le-loup.jpg"),
+          image: require("../../assets/illustrations/wolf/le_loup-thumbnail.jpg"),
           componentName: "leLoupContent"
         },
         {

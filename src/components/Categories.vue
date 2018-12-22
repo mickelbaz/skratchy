@@ -13,7 +13,6 @@
           </div>
         </div>
       </div>
-
       <work-details-modal
         :id="'modal'+ JSON.stringify(categoryItem)"
         :category-item-class="categoryItem.class"

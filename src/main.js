@@ -6,6 +6,7 @@ import Illustration from './components/arts/Illustration.vue'
 import LicenceProject from './components/arts/LicenceProject.vue'
 import Graphism from './components/arts/Graphism.vue'
 import Photography from './components/arts/Photography.vue'
+import NotFound from './components/NotFound.vue'
 
 Vue.config.productionTip = false
 
@@ -28,6 +29,14 @@ const routes = [{
   {
     path: '/photography',
     component: Photography
+  },
+  {
+    path: '/404',
+    component: NotFound
+  },  
+  {
+    path: '*', 
+    redirect: '/404'
   }
 ]
 const router = new VueRouter({
