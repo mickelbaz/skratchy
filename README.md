@@ -1,4 +1,5 @@
 # skratchy
+This is skratchy's portfolio!
 
 ## Project setup
 ```
