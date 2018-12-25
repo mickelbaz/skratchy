@@ -84,7 +84,7 @@ h1.name-title {
 .art-grid{
   position: absolute;
   width: 100%;
-  top: 20px;
+  top: 11px;
   left: 0;
 }
 .artsContainer{

@@ -14,7 +14,7 @@
         :category-item-class="categoryItem.class"
         v-if="openedModal === JSON.stringify(categoryItem)"
         @close="handleClose()">
-        <h2 slot="head-title" class="work-type">{{ categoryItem.type }}</h2>
+        <h3 slot="head-title" class="work-type">{{ categoryItem.type }}</h3>
         <h1 slot="head-title" class="work-name">{{ categoryItem.name }}</h1>
         <component :is="selectedComponent"></component>
       </work-details-modal>
@@ -160,6 +160,7 @@ export default {
   color: white;
   align-self: center;
   margin: 0 10px;
+  font-size: 20px;
 }
 .dark-overlay {
   position: absolute;
@@ -294,18 +295,21 @@ h3.work-type {
 }
 .modal-header h1.work-name {
   margin-top: 0;
-  font-size: 3em;
+  font-size: 25px;
+  text-transform: capitalize;
 }
 
-.modal-header h2.work-type {
+.modal-header h3.work-type {
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 0;
+  letter-spacing: .11em;
+  font-size: 15px;
 }
 .la-boom .modal-header h1.work-name {
   color: rgb(251, 76, 174);
 }
-.la-boom .modal-header h2.work-type {
+.la-boom .modal-header h3.work-type {
   color: rgb(94, 122, 182);
 }
 .le-loup .modal-header h1.work-name {
@@ -314,25 +318,25 @@ h3.work-type {
 .wad-mag .modal-header h1.work-name {
   color: rgb(0, 0, 0);
 }
-.wad-mag .modal-header h2.work-type {
+.wad-mag .modal-header h3.work-type {
   color: rgb(51, 51, 51);
 }
 .restaurant .modal-header h1.work-name {
   color: rgb(37, 43, 130);
 }
-.restaurant .modal-header h2.work-type {
+.restaurant .modal-header h3.work-type {
   color: rgb(51, 51, 51);
 }
 .moma .modal-header h1.work-name {
   color: black;
 }
-.moma .modal-header h2.work-type {
+.moma .modal-header h3.work-type {
   color: black;
 }
 .liberty-bell .modal-header h1.work-name {
   color: rgb(248, 191, 119);
 }
-.liberty-bell .modal-header h2.work-type {
+.liberty-bell .modal-header h3.work-type {
   color: black;
 }
 

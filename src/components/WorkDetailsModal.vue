@@ -112,6 +112,8 @@ export default {
 .modal-header h3.work-type {
   font-weight: 300;
   text-transform: uppercase;
+  letter-spacing: .11em;
+  font-size: 15px;
 }
 hr{
     color: #494a4d;

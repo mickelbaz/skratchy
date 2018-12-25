@@ -187,7 +187,7 @@ export default {
   color: white;
 }
 .about .about-title{
-  font-size: 1.5rem;
+  font-size: 20px;
 }
 .about .name-title {
   font-weight: 700;

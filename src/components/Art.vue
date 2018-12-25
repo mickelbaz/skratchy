@@ -1,7 +1,7 @@
 <template>
 <div :class="artName" class="art-page">
-    <h1 :class="[`${artName} main-title`]" class="main-title">{{ mainTitle }}</h1>
-    <div :class="[`${artName} content`]" class="art-content">
+    <h1 :class="[`${artName}-main-title`]" class="main-title">{{ mainTitle }}</h1>
+    <div :class="[`${artName}-content`]" class="art-content">
         <categories :art-categories="artCategories"></categories>
     </div>
 
@@ -46,7 +46,7 @@ export default {
     text-transform: uppercase;
     text-align: left;
     padding-left: 8%;
-    font-size: 3rem;
+    font-size: 30px;
     margin-top: 0;
     transition: all 0.2s;
 }
