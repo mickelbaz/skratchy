@@ -28,7 +28,7 @@
             <h3>photographies</h3>
           </div>
         </router-link>
-        <router-link to="/illustration">
+        <router-link to="/typography">
           <div class="typography art-block">
             <h3>typographie</h3>
           </div>
@@ -62,7 +62,7 @@ export default {
         },
         {
           name: "typographie",
-          url: "/photography"
+          url: "/typography"
         }
       ]
     };
@@ -197,6 +197,14 @@ h1.name-title {
   .center-art{
     margin-top: 0;
   }
+  .center-art:hover{
+  margin-top: 0;
+  margin-right: 20px;
+}
+  .right-arts a:hover .art-block{
+  margin-left: 0;
+  margin-right: 20px;
+}
 }
 @media screen and (max-width: 449px){
   .artsContainer img {

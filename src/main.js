@@ -6,6 +6,7 @@ import Illustration from './components/arts/Illustration.vue'
 import LicenceProject from './components/arts/LicenceProject.vue'
 import Graphism from './components/arts/Graphism.vue'
 import Photography from './components/arts/Photography.vue'
+import Typography from './components/arts/Typography.vue'
 import NotFound from './components/NotFound.vue'
 
 Vue.config.productionTip = false
@@ -29,6 +30,10 @@ const routes = [{
   {
     path: '/photography',
     component: Photography
+  },
+  {
+    path: '/typography',
+    component: Typography
   },
   {
     path: '/404',

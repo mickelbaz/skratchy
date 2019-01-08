@@ -213,13 +213,19 @@ hr{
 .modal-container.liberty-bell{
   background-color: white;
 }
+.modal-container.logo-creation{
+  background-color: black;
+}
 .la-boom .back-button{
   background-color: rgb(94, 122, 182);
   color: rgb(255,	253,	118);
-}
+}	
 .la-boom .back-button:hover{
   background-color: rgb(252, 77, 175);
   color: rgb(255,	253,	118);
+}
+.le-dragon .back-button:hover{
+  background-color: rgb(252, 63,	59);
 }
 
 @media only screen and (max-width: 414px){

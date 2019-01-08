@@ -40,11 +40,13 @@ import RestaurantContent from "./arts/graphism/RestaurantContent.vue";
 import BenettonContent from "./arts/graphism/BenettonContent.vue";
 import MomaContent from "./arts/graphism/MomaContent.vue";
 import BeerContent from "./arts/graphism/BeerContent.vue";
+import TravelAgencyContent from "./arts/graphism/TravelAgencyContent.vue";
 import KnowledgeContent from "./arts/graphism/KnowledgeContent.vue";
 import PortraitsContent from "./arts/photographies/PortraitsContent.vue";
 import MongoliaContent from "./arts/photographies/MongoliaContent.vue";
 import DanceContent from "./arts/photographies/DanceContent.vue";
 import NyContent from "./arts/photographies/NyContent.vue";
+import RabbitContent from "./arts/photographies/RabbitContent.vue";
 
 export default {
   props: {
@@ -69,11 +71,13 @@ export default {
     benettonContent: BenettonContent,
     momaContent: MomaContent,
     beerContent: BeerContent,
+    travelAgencyContent: TravelAgencyContent,
     knowledgeContent: KnowledgeContent,
     portraitsContent: PortraitsContent,
     mongoliaContent: MongoliaContent,
     danceContent: DanceContent,
-    nyContent: NyContent
+    nyContent: NyContent,
+    rabbitContent: RabbitContent
   },
   data() {
     return {

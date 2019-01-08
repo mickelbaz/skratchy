@@ -1,6 +1,7 @@
 <template>
   <div class="portraits-content">
     <img src="../../../assets/photographies/portraits/brothers.jpg" alt="Brothers">
+    <img src="../../../assets/photographies/portraits/siblings.jpg" alt="Brothers">
     <img src="../../../assets/photographies/portraits/grown-man.jpg" alt="Grown Man">
   </div>
 </template>

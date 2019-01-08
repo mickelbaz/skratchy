@@ -52,8 +52,8 @@ export default {
           name: "agence de voyage",
           type: "création d'un logo",
           class: "logo-creation",
-          image: require("../../assets/graphism/liberty-bell.png"),
-          url: "/illustration/electric-animals"
+          image: require("../../assets/graphism/travel-agency/agency-thumbnail.jpg"),
+          componentName: "travelAgencyContent"
         },
         {
           name: "que sais-je ?",

@@ -37,7 +37,8 @@ export default {
           name: "poser un lapin",
           type: "",
           class: "rabbit",
-          image: require("../../assets/photographies/mongolia/mongolia-thumbnail.jpg")
+          image: require("../../assets/photographies/rabbit/rabbit-thumbnail.jpg"),
+          componentName: "rabbitContent"
         },
         {
           name: "le mouvement",

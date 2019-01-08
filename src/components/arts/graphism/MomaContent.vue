@@ -2,6 +2,7 @@
   <div class="moma-content">
     <img src="../../../assets/graphism/moma/logo.jpg" alt="MoMa Logo">
     <img class="poster" src="../../../assets/graphism/moma/poster.jpg" alt="MoMa Poster">
+    <img src="../../../assets/graphism/moma/moma_bus-station.jpg" alt="MoMa Bus Station">
   </div>
 </template>
 
