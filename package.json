@@ -11,8 +11,6 @@
   "dependencies": {
     "@vue/eslint-config-airbnb": "^4.0.0",
     "express": "^4.16.4",
-    "intersection-observer": "^0.5.1",
-    "sal.js": "^0.5.0",
     "vue": "^2.5.21",
     "vue-router": "^3.0.2"
   },
@@ -23,7 +21,8 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.10.0",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.5.21"
+    "vue-template-compiler": "^2.5.21",
+    "webpack": "^4.28.4"
   },
   "eslintConfig": {
     "root": true,
