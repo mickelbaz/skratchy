@@ -65,6 +65,7 @@ export default {
   display: flex;
   transition: opacity 0.3s ease;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .modal-wrapper {
   display: table-cell;
