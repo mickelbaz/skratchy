@@ -47,6 +47,7 @@ import MongoliaContent from "./arts/photographies/MongoliaContent.vue";
 import DanceContent from "./arts/photographies/DanceContent.vue";
 import NyContent from "./arts/photographies/NyContent.vue";
 import RabbitContent from "./arts/photographies/RabbitContent.vue";
+import LaMeduseContent from "./arts/licence/editions/LaMeduseContent.vue";
 
 export default {
   props: {
@@ -77,7 +78,8 @@ export default {
     mongoliaContent: MongoliaContent,
     danceContent: DanceContent,
     nyContent: NyContent,
-    rabbitContent: RabbitContent
+    rabbitContent: RabbitContent,
+    laMeduseContent: LaMeduseContent
   },
   data() {
     return {
