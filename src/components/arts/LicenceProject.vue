@@ -1,6 +1,7 @@
 <template>
   <div class="licence-content">
-    <h1 class="main-title">{{ mainTitle }}</h1>  
+    <div class="licence-head">
+      <h1 class="main-title">{{ mainTitle }}</h1>  
     <div class="licence-category-buttons">
       <div :class="categoryButton.class"
           :key="JSON.stringify(categoryButton)"
@@ -9,6 +10,7 @@
           {{ categoryButton.name }}
         </button>
       </div>
+    </div>
     </div>
     <fanzine v-show="isActive('fanzine')"></fanzine>
     <drawings v-show="isActive('drawings')"></drawings>
@@ -63,11 +65,21 @@ export default {
 </script>
 
 <style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to{
+  opacity: 0;
+}
+
 .licence-content {
-    display: flex;
-    flex-direction: column;
-    padding-left: 8%;
-    padding-right: 8%;
+  display: flex;
+  flex-direction: column;
+}
+
+.licence-head{
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 h1.main-title {
@@ -110,7 +122,7 @@ button:before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: rgb(43, 0, 255);
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);

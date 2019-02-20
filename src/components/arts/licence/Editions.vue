@@ -20,13 +20,13 @@ export default {
                     name: "le gecko",
                     class: "le-gecko",
                     image: require("../../../assets/licence/editions/le_gecko/le-gecko_thumbnail.jpg"),
-                    componentName: "laBoomContent"
+                    componentName: "leGeckoContent"
                 },
                 {
                     name: "le frelon",
                     class: "le-frelon",
                     image: require("../../../assets/licence/editions/le_frelon/le-frelon_thumbnail.jpg"),
-                    componentName: "pressContent"
+                    componentName: "leFrelonContent"
                 },
             ]
         }

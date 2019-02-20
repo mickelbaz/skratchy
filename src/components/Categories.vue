@@ -48,6 +48,8 @@ import DanceContent from "./arts/photographies/DanceContent.vue";
 import NyContent from "./arts/photographies/NyContent.vue";
 import RabbitContent from "./arts/photographies/RabbitContent.vue";
 import LaMeduseContent from "./arts/licence/editions/LaMeduseContent.vue";
+import LeGeckoContent from "./arts/licence/editions/LeGeckoContent.vue";
+import LeFrelonContent from "./arts/licence/editions/LeFrelonContent.vue";
 
 export default {
   props: {
@@ -79,7 +81,9 @@ export default {
     danceContent: DanceContent,
     nyContent: NyContent,
     rabbitContent: RabbitContent,
-    laMeduseContent: LaMeduseContent
+    laMeduseContent: LaMeduseContent,
+    leGeckoContent: LeGeckoContent,
+    leFrelonContent: LeFrelonContent
   },
   data() {
     return {
