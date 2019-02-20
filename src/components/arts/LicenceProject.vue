@@ -99,7 +99,7 @@ h1.main-title {
 }
 
 .licence-category-buttons button{
-  background-color: transparent; /* Green */
+  background-color: transparent;
   border: none;
   color: black;
   padding: 15px 32px;
@@ -133,5 +133,28 @@ button:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+@media screen and (max-width: 768px) {
+  .licence-head button:before{
+    content: none;
+  }
+  .licence-head button{
+    border: 2px solid rgb(43, 0, 255);
+    border-radius: 26px;
+    margin-bottom: 20px;
+  }
+  .licence-content{
+    padding-top: 2em;
+  }
+  .licence-category-buttons{
+    flex-direction: column;
+  }
+  h1.main-title{
+    text-align: center;
+    font-size: 2rem;
+    padding: 0;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
 }
 </style>

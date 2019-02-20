@@ -47,32 +47,36 @@ export default {
 </script>
 
 <style scoped>
-.fanzine-content{
+.fanzine-content {
     display: flex;
     flex-direction: column;
 }
-.fanzine-item img{
+
+.fanzine-item img {
     width: 100%;
 }
-.fanzine-murene{
+
+.fanzine-murene {
     padding-top: 70px;
 }
+
 .fanzine-gecko,
 .fanzine-meduse,
 .fanzine-frelon,
-.fanzine-poisson{
+.fanzine-poisson {
     padding-left: 8%;
     padding-right: 8%;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
+
     .fanzine-gecko,
-.fanzine-meduse,
-.fanzine-frelon,
-.fanzine-poisson{
-    padding-left: 0;
-    padding-right: 0;
-}
+    .fanzine-meduse,
+    .fanzine-frelon,
+    .fanzine-poisson {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 </style>
 
