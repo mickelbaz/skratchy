@@ -45,7 +45,7 @@ export default {
           class: "licence-fanzine-button"
         }
       ],
-      activeItem: 'drawings' 
+      activeItem: 'drawings'
     };
   },
   components: {
