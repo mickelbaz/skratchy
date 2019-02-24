@@ -81,163 +81,174 @@ export default {
 </script>
 
 <style scoped>
-.animals-grid{
+.animals-grid {
     display: grid;
     grid-template-columns: 33% 34% 33%;
     grid-template-rows: 15% 20% 24% 12% 17% 17%;
     padding-left: 8%;
     padding-right: 8%;
 }
-.animals-grid img{
+
+.animals-grid img {
     width: 100%;
 }
 @media screen and (min-width: 768px) {
     .animals-grid .moray-a {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}  
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
 
-.animals-grid .gecko-leg {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-} 
+    .animals-grid .gecko-leg {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
 
-.animals-grid .jelly-fish {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 4;
-} 
+    .animals-grid .jelly-fish {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
 
-.animals-grid .lizard {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 2;
-}
+    .animals-grid .lizard {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
 
-.animals-grid .bee {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 3;
-}
+    .animals-grid .bee {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
 
-.animals-grid .spearfish-a {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
+    .animals-grid .spearfish-a {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
 
-.animals-grid .hornet-b {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 4;
-  grid-row-end: 4;
-}
+    .animals-grid .hornet-b {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
 
-.animals-grid .moray-b {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 4;
-}
+    .animals-grid .moray-b {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
 
-.animals-grid .spearfish-b {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 5;
-}
+    .animals-grid .spearfish-b {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
 
-.animals-grid .hornet-a {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 6;
-}
+    .animals-grid .hornet-a {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
 
-.animals-grid .platypus {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 6;
-  grid-row-end: 6;
-}
-}
+    .animals-grid .platypus {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+    }
 
 @media screen and (max-width: 768px) {
-    .animals-grid{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 13% 9% 9% 14% 6% 14% 8% 5%;
-    padding: 0;
+    .animals-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 13% 9% 9% 14% 6% 14% 8% 5%;
+        padding: 0;
     }
+
     .animals-grid .elephant-fish {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 3;
-}
-.animals-grid .bee {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    .animals-grid .bee {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
     .animals-grid .gecko-leg {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 3;
-} 
-.animals-grid .jelly-fish {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 4;
-  grid-row-end: 7;
-}
-.animals-grid .lizard {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 4;
-  grid-row-end: 4;
-}
-.animals-grid .spearfish-a {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 5;
-  grid-row-end: 7;
-}
-.animals-grid .moray-b {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 7;
-  grid-row-end: 7;
-}
-.animals-grid .hornet-a {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 8;
-  grid-row-end: 8;
-}
-.animals-grid .platypus {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 10;
-  grid-row-end: 11;
-}
-.animals-grid .spearfish-b {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 8;
-  grid-row-end: 8;
-}
-}
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .animals-grid .jelly-fish {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 7;
+    }
+
+    .animals-grid .lizard {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+    .animals-grid .spearfish-a {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 7;
+    }
+
+    .animals-grid .moray-b {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 7;
+        grid-row-end: 7;
+    }
+
+    .animals-grid .hornet-a {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 8;
+        grid-row-end: 8;
+    }
+
+    .animals-grid .platypus {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 10;
+        grid-row-end: 11;
+    }
+
+    .animals-grid .spearfish-b {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 8;
+        grid-row-end: 8;
+    }
+    }
 
 </style>
 
