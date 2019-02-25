@@ -74,7 +74,7 @@ export default {
 h1.name-title {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-top: 0;
 }
 .homepage-content {

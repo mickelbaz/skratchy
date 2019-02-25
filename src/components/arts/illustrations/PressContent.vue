@@ -26,4 +26,11 @@
 .inside-paper img {
   width: 50%;
 }
+
+@media screen and (max-width: 768px){
+  .cover-paper img{
+    height: 100%;
+    width: 100%;
+}
+}
 </style>

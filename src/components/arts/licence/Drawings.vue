@@ -83,8 +83,8 @@ export default {
 <style scoped>
 .animals-grid {
     display: grid;
-    grid-template-columns: 33% 34% 33%;
-    grid-template-rows: 15% 20% 24% 12% 17% 17%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% 17% 19% 10% 17% 16%;
     padding-left: 8%;
     padding-right: 8%;
 }
@@ -174,7 +174,7 @@ export default {
 @media screen and (max-width: 768px) {
     .animals-grid {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 13% 9% 9% 14% 6% 14% 8% 5%;
         padding: 0;
     }

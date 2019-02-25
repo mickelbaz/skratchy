@@ -6,7 +6,8 @@
       <div :class="categoryButton.class"
           :key="JSON.stringify(categoryButton)"
           v-for="categoryButton in categoryButtons">
-        <button @click="setActive(categoryButton.id)">
+        <button @click="setActive(categoryButton.id)"
+                :class="{ active : activeItem == categoryButton.id }">
           {{ categoryButton.name }}
         </button>
       </div>
@@ -65,12 +66,6 @@ export default {
 </script>
 
 <style scoped>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-.fade-enter, .fade-leave-to{
-  opacity: 0;
-}
 
 .licence-content {
   display: flex;
@@ -109,6 +104,7 @@ h1.main-title {
   font-size: 16px;
   cursor: pointer;
   position: relative;
+  transition: all .2s;
 }
 
 .licence-category-buttons button:focus{
@@ -134,6 +130,15 @@ button:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+.licence-head button.active{
+    background-color: rgb(43, 0, 255);
+    color: white;
+    border-radius: 26px;
+    margin-bottom: 20px;
+}
+.licence-head button.active:before{
+    content: none;
+  }
 @media screen and (max-width: 768px) {
   .licence-head button:before{
     content: none;

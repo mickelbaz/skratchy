@@ -8,4 +8,10 @@
 img {
   height: 90vh;
 }
+@media screen and (max-width: 768px){
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
 </style>

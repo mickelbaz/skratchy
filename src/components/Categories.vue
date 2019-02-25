@@ -357,6 +357,10 @@ h3.work-type {
   .margin-around{
     margin: 40px 0;
   }
+  .galleryContainer {
+  flex-direction: column;
+  align-items: center;
+}
 }
 @media screen and (max-width: 414px){
   .galleryContainer img{
