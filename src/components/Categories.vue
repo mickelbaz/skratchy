@@ -41,6 +41,8 @@ import BenettonContent from "./arts/graphism/BenettonContent.vue";
 import MomaContent from "./arts/graphism/MomaContent.vue";
 import BeerContent from "./arts/graphism/BeerContent.vue";
 import TravelAgencyContent from "./arts/graphism/TravelAgencyContent.vue";
+import BasalteContent from "./arts/graphism/BasalteContent.vue";
+import PepitoContent from "./arts/graphism/PepitoContent.vue";
 import KnowledgeContent from "./arts/graphism/KnowledgeContent.vue";
 import PortraitsContent from "./arts/photographies/PortraitsContent.vue";
 import MongoliaContent from "./arts/photographies/MongoliaContent.vue";
@@ -75,6 +77,8 @@ export default {
     momaContent: MomaContent,
     beerContent: BeerContent,
     travelAgencyContent: TravelAgencyContent,
+    basalteContent: BasalteContent,
+    pepitoContent: PepitoContent,
     knowledgeContent: KnowledgeContent,
     portraitsContent: PortraitsContent,
     mongoliaContent: MongoliaContent,
@@ -195,6 +199,7 @@ h3.work-type {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: stretch;
+  margin-bottom: 100px;
 }
 .galleryCard {
   cursor: pointer;
@@ -348,6 +353,18 @@ h3.work-type {
 }
 .liberty-bell .modal-header h3.work-type {
   color: black;
+}
+.basalte .modal-header h1.work-name {
+  color: rgb(9,	30,	222);
+}
+.basalte .modal-header h3.work-type {
+  color: rgb(60, 4,	59);
+}
+.pepito .modal-header h1.work-name {
+  color: rgb(232, 35, 50);
+}
+.pepito .modal-header h3.work-type {
+  color: rgb(145, 50, 31);
 }
 
 @media screen and (max-width: 768px){

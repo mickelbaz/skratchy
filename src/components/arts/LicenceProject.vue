@@ -97,11 +97,11 @@ h1.main-title {
   background-color: transparent;
   border: none;
   color: black;
-  padding: 15px 32px;
+  padding: 7px 23px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   position: relative;
   transition: all .2s;
@@ -138,7 +138,7 @@ button:hover:before {
 }
 .licence-head button.active:before{
     content: none;
-  }
+}
 @media screen and (max-width: 768px) {
   .licence-head button:before{
     content: none;

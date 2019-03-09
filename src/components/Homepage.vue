@@ -205,6 +205,9 @@ h1.name-title {
   margin-left: 0;
   margin-right: 20px;
 }
+h1.name-title {
+  font-size: 2rem;
+}
 }
 @media screen and (max-width: 449px){
   .artsContainer img {

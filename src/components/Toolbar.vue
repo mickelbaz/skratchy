@@ -16,12 +16,15 @@
         <h1 class="about-title">{{ aboutTitle }}</h1>
         <h1 class="name-title">{{ name }}</h1>
         <div class="info">
-          <div class="column"></div>
           <div class="column">
-            <a class="send-email" href="mailto:webmaster@example.com">
+          </div>
+          <div class="column">
+          </div>
+        </div>
+        <div class="email-button">
+          <a class="send-email" href="mailto:claradelahaye@live.fr">
               {{ emailTitle }}
             </a>
-          </div>
         </div>
         <div class="social-networks">
           <ul class="social-networks-list">
@@ -192,7 +195,7 @@ export default {
 .about .name-title {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-top: 72px;
 }
 
@@ -238,6 +241,11 @@ export default {
   bottom: 30px;
   width: 100%;
 }
+.about .email-button {
+  position: absolute;
+  bottom: 150px;
+  width: 100%;
+}
 
 @media screen and (max-width: 768px){
   .navbar{
@@ -247,6 +255,9 @@ export default {
     backdrop-filter: blur(20px);
     transition: all .5s;
   } 
+  .about .name-title {
+  font-size: 2rem;
+}
 }
 @media screen and (max-width: 449px){
   .navbar {

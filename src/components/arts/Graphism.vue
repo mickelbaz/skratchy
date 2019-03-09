@@ -65,9 +65,16 @@ export default {
         {
           name: "basalte",
           type: "persistance rétinienne",
-          class: "book-cover",
-          image: require("../../assets/graphism/liberty-bell.png"),
-          url: "/illustration/electric-animals"
+          class: "basalte",
+          image: require("../../assets/graphism/basalte/basalte-thumbnail.jpg"),
+          componentName: "basalteContent"
+        },
+        {
+          name: "pépito",
+          type: "packaging",
+          class: "pepito",
+          image: require("../../assets/graphism/pepito/pepito-thumbnail.jpg"),
+          componentName: "pepitoContent"
         }
       ]
     };

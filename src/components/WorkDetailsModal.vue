@@ -152,7 +152,7 @@ hr{
   width: 45px;
   text-align: center;
   display: block;
-  font-size: 17px;
+  font-size: 14px;
   letter-spacing: -0.01em;
   line-height: 1.1em;
   color: #fff;
@@ -165,53 +165,35 @@ hr{
   background-color: rgba(0, 0, 0, 0.1);
   margin: 45px auto 20px;
   cursor: pointer;
-  -webkit-transition: all 0.5s cubic-bezier(0.175, 1.2, 0.32, 1.275);
-  -o-transition: all 0.5s cubic-bezier(0.175, 1.2, 0.32, 1.275);
-  transition: all 0.5s cubic-bezier(0.175, 1.2, 0.32, 1.275);
+  transition: all 0.2s;
 }
 .back-button:hover {
   color: rgba(0, 0, 0, 0.9);
   background-color: rgba(255, 255, 255, 0.8);
 }
-/*
- * The following styles are auto-applied to elements with
- * transition="modal" when their visibility is toggled
- * by Vue.js.
- *
- * You can easily play with the modal transition by editing
- * these styles.
- */
-
 .modal-enter {
   opacity: 0;
 }
-
 .modal-leave-active {
   opacity: 0;
 }
-
 .modal-enter .modal-container,
 .modal-leave-active .modal-container {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
-.modal-container.la-boom{
-  background-color: white;
-}
 .modal-container.le-loup{
   background-color: rgb(0, 0, 0);
 }
 .modal-container.wad-mag{
-  background-color: rgb(206,	206,	206)	;
+  background-color: rgb(206,	206,	206);
 }
-.modal-container.restaurant{
-  background-color: white;
-}
-.modal-container.moma{
-  background-color: white;
-}
-.modal-container.liberty-bell{
+.modal-container.la-boom,
+.modal-container.restaurant,
+.modal-container.basalte,
+.modal-container.moma,
+.modal-container.liberty-bell,
+.modal-container.pepito{
   background-color: white;
 }
 .modal-container.logo-creation{
@@ -227,6 +209,40 @@ hr{
 }
 .le-dragon .back-button:hover{
   background-color: rgb(252, 63,	59);
+}
+.restaurant .back-button{
+  background-color: rgb(37, 43, 130);
+  color: white;
+}
+.restaurant .back-button:hover{
+  background-color: rgb(127, 236, 229);
+  color: rgb(37, 43, 130);
+}
+.moma .back-button,
+.wad-mag .back-button{
+  background-color: black;
+  color: white;
+}
+.moma .back-button:hover,
+.wad-mag .back-button:hover{
+  background-color: rgba(0, 0, 0, .7);
+  color: white;
+}
+.basalte .back-button{
+  background-color: rgb(9,	30,	222);
+  color: rgb(249,	248,	56);
+}
+.basalte .back-button:hover{
+  background-color: rgb(53,	221,	102);
+  color: white;
+}
+.pepito .back-button{
+  background-color: rgb(145, 50, 31);
+  color: white;
+}
+.pepito .back-button:hover{
+  background-color: rgb(232, 35, 50);
+  color: white;
 }
 
 @media only screen and (max-width: 414px){
