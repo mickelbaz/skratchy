@@ -130,10 +130,10 @@ export default {
 }
 
 .fade-enter,
-  .fade-leave-to
+.fade-leave-to
 
-  /* .fade-leave-active below version 2.1.8 */
- {
+/* .fade-leave-active below version 2.1.8 */
+  {
   opacity: 0;
 }
 
@@ -182,6 +182,7 @@ export default {
   border-radius: 100px;
   cursor: pointer;
 }
+
 .close-button img {
   width: 25px;
 }
@@ -189,9 +190,11 @@ export default {
 .close-button button {
   color: white;
 }
-.about .about-title{
+
+.about .about-title {
   font-size: 20px;
 }
+
 .about .name-title {
   font-weight: 700;
   text-transform: uppercase;
@@ -241,25 +244,28 @@ export default {
   bottom: 30px;
   width: 100%;
 }
+
 .about .email-button {
   position: absolute;
   bottom: 150px;
   width: 100%;
 }
 
-@media screen and (max-width: 768px){
-  .navbar{
+@media screen and (max-width: 768px) {
+  .navbar {
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid #bebebe;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     transition: all .5s;
-  } 
+  }
+
   .about .name-title {
-  font-size: 2rem;
+    font-size: 2rem;
+  }
 }
-}
-@media screen and (max-width: 449px){
+
+@media screen and (max-width: 449px) {
   .navbar {
     padding: 20px;
   }
