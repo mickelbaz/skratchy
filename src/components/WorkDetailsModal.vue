@@ -244,7 +244,18 @@ hr{
   background-color: rgb(232, 35, 50);
   color: white;
 }
-
+@media only screen and (min-width: 415px) and (max-width: 1180px){
+  .close {
+    padding: 15px;
+  top: 45px;
+  right: 45px;
+  background-color: rgba(0, 0, 0, 0.5);
+  }
+  .close img{
+    vertical-align: middle;
+    width: 19px;
+  }
+}
 @media only screen and (max-width: 414px){
   .modal-container{
     height: auto;
@@ -258,6 +269,16 @@ hr{
     overflow: hidden;
     padding-bottom: 60px;
     position: absolute;
+  }
+  .close {
+  padding: 15px;
+  top: 15px;
+  right: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  }
+  .close img{
+    vertical-align: middle;
+    width: 19px;
   }
 }
 </style>
