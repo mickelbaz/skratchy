@@ -6,7 +6,6 @@
     :class="typographyItem.class"
     class="typography-item">
       <img :src="typographyItem.url" :alt="typographyItem.name"/>
-      <hr>
     </div>
   </div>
 </template>
@@ -44,15 +43,30 @@ export default {
 }
 
 h1.main-title {
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: left;
-    padding-left: 8%;
-    font-size: 30px;
+    padding-left: 4%;
+    font-size: 20px;
     margin-top: 0;
     transition: all 0.2s;
 }
 
 .typography-item img{
-  width: 100%;
+  width: 50%;
+  padding: 50px 0;
+}
+@media screen and (max-width: 768px){
+  h1.main-title{
+    text-align: center;
+    padding: 0;
+    transition: all 0.2s;
+  }
+  .typography-content{
+    padding-top: 2em;
+  }
+  .typography-item img{
+    width: 100%;
+    padding: 15px 0;
+  }
 }
 </style>

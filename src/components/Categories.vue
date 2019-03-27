@@ -43,6 +43,7 @@ import BeerContent from "./arts/graphism/BeerContent.vue";
 import TravelAgencyContent from "./arts/graphism/TravelAgencyContent.vue";
 import BasalteContent from "./arts/graphism/BasalteContent.vue";
 import PepitoContent from "./arts/graphism/PepitoContent.vue";
+import CherryContent from "./arts/graphism/CherryContent.vue";
 import KnowledgeContent from "./arts/graphism/KnowledgeContent.vue";
 import PortraitsContent from "./arts/photographies/PortraitsContent.vue";
 import MongoliaContent from "./arts/photographies/MongoliaContent.vue";
@@ -79,6 +80,7 @@ export default {
     travelAgencyContent: TravelAgencyContent,
     basalteContent: BasalteContent,
     pepitoContent: PepitoContent,
+    cherryContent: CherryContent,
     knowledgeContent: KnowledgeContent,
     portraitsContent: PortraitsContent,
     mongoliaContent: MongoliaContent,
@@ -174,7 +176,7 @@ export default {
   color: white;
   align-self: center;
   margin: 0 10px;
-  font-size: 20px;
+  font-size: 16px;
 }
 .dark-overlay {
   position: absolute;
@@ -309,8 +311,8 @@ h3.work-type {
   animation-direction: alternate;
 }
 .modal-header h1.work-name {
-  margin-top: 0;
-  font-size: 25px;
+  margin-top: 4px;
+  font-size: 14px;
   text-transform: capitalize;
 }
 
@@ -321,50 +323,27 @@ h3.work-type {
   letter-spacing: .11em;
   font-size: 15px;
 }
-.la-boom .modal-header h1.work-name {
-  color: rgb(251, 76, 174);
-}
-.la-boom .modal-header h3.work-type {
-  color: rgb(94, 122, 182);
-}
+
 .le-loup .modal-header h1.work-name {
-  color: rgb(243, 161, 0)
+  color: white
 }
-.wad-mag .modal-header h1.work-name {
-  color: rgb(0, 0, 0);
-}
-.wad-mag .modal-header h3.work-type {
-  color: rgb(51, 51, 51);
-}
-.restaurant .modal-header h1.work-name {
-  color: rgb(37, 43, 130);
-}
-.restaurant .modal-header h3.work-type {
-  color: rgb(51, 51, 51);
-}
-.moma .modal-header h1.work-name {
+.la-boom .modal-header h1.work-name,
+.la-boom .modal-header h3.work-type,
+.restaurant .modal-header h1.work-name,
+.restaurant .modal-header h3.work-type,
+.wad-mag .modal-header h1.work-name,
+.wad-mag .modal-header h3.work-type,
+.moma .modal-header h1.work-name,
+.moma .modal-header h3.work-type,
+.benetton .modal-header h1.work-name,
+.benetton .modal-header h3.work-type,
+.liberty-bell .modal-header h1.work-name,
+.liberty-bell .modal-header h3.work-type,
+.basalte .modal-header h1.work-name,
+.basalte .modal-header h3.work-type,
+.pepito .modal-header h1.work-name,
+.pepito .modal-header h3.work-type{
   color: black;
-}
-.moma .modal-header h3.work-type {
-  color: black;
-}
-.liberty-bell .modal-header h1.work-name {
-  color: rgb(248, 191, 119);
-}
-.liberty-bell .modal-header h3.work-type {
-  color: black;
-}
-.basalte .modal-header h1.work-name {
-  color: rgb(9,	30,	222);
-}
-.basalte .modal-header h3.work-type {
-  color: rgb(60, 4,	59);
-}
-.pepito .modal-header h1.work-name {
-  color: rgb(232, 35, 50);
-}
-.pepito .modal-header h3.work-type {
-  color: rgb(145, 50, 31);
 }
 
 @media screen and (max-width: 768px){

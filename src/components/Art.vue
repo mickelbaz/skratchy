@@ -43,10 +43,10 @@ export default {
 }
 
 .art-page h1.main-title {
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: left;
-    padding-left: 8%;
-    font-size: 30px;
+    padding-left: 4%;
+    font-size: 20px;
     margin-top: 0;
     transition: all 0.2s;
 }
@@ -65,7 +65,6 @@ export default {
 @media screen and (max-width: 768px){
   .art-page h1.main-title{
     text-align: center;
-    font-size: 2rem;
     padding: 0;
     transition: all 0.2s;
   }

@@ -11,7 +11,7 @@ export default {
   data() {
     return {
       artName: "photography",
-      mainTitle: "Photographies",
+      mainTitle: "Photography",
       photographyCategories: [{
           name: "portraits",
           type: "",
@@ -39,12 +39,6 @@ export default {
           class: "rabbit",
           image: require("../../assets/photographies/rabbit/rabbit-thumbnail.jpg"),
           componentName: "rabbitContent"
-        },
-        {
-          name: "le mouvement",
-          type: "",
-          class: "movement",
-          image: require("../../assets/photographies/mongolia/mongolia-thumbnail.jpg")
         },
         {
           name: "new york",

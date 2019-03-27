@@ -9,7 +9,7 @@ export default {
   data() {
     return {
       artName: "illustration",
-      mainTitle: "Illustrations_",
+      mainTitle: "Illustration",
       illustrationCategories: [
         {
           name: "le dragon",
@@ -69,12 +69,6 @@ export default {
           class: "taxi",
           image: require("../../assets/illustrations/therapie-taxi/therapie-thumbnail.jpg"),
           componentName: "therapieContent"
-        },
-        {
-          name: "sin city",
-          class: "sin-city",
-          image: require("../../assets/illustrations/wolf/wolf.png"),
-          url: "/illustration/electric-animals"
         }
       ]
     };

@@ -11,7 +11,7 @@ export default {
   data() {
     return {
       artName: "graphism",
-      mainTitle: "Arts_ Graphiques",
+      mainTitle: "Graphism",
       graphismCategories: [{
           name: "cinquante degrés à l'ombre",
           type: "WAD Magazine",
@@ -75,6 +75,13 @@ export default {
           class: "pepito",
           image: require("../../assets/graphism/pepito/pepito-thumbnail.jpg"),
           componentName: "pepitoContent"
+        },
+        {
+          name: "L'obsolescence programée et assumée",
+          type: "Cherry",
+          class: "cherry",
+          image: require("../../assets/graphism/cherry/cherry-thumbnail.jpg"),
+          componentName: "cherryContent"
         }
       ]
     };

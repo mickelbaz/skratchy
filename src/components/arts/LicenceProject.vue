@@ -28,7 +28,7 @@ export default {
   data() {
     return {
       artName: "licence-project",
-      mainTitle: "Projet de Licence",
+      mainTitle: "Licence Project",
       categoryButtons: [
         {
           id: "editions",
@@ -78,10 +78,10 @@ export default {
 }
 
 h1.main-title {
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: left;
-    padding-left: 8%;
-    font-size: 30px;
+    padding-left: 4%;
+    font-size: 20px;
     margin-top: 0;
     transition: all 0.2s;
 }
@@ -91,6 +91,7 @@ h1.main-title {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 10px 15%;
 }
 
 .licence-category-buttons button{
@@ -156,7 +157,7 @@ button:hover:before {
   }
   h1.main-title{
     text-align: center;
-    font-size: 2rem;
+    font-size: 20px;
     padding: 0;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;

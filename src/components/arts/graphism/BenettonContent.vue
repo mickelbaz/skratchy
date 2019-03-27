@@ -13,12 +13,14 @@ export default {
 
 <style scoped>
 img {
-  height: 80vh;
+  height: 75vh;
+  padding: 15px;
 }
 @media only screen and (max-width: 768px){
   img {
     width: 100%;
     height: 100%;
+    padding: 0;
   }
 }
 </style>

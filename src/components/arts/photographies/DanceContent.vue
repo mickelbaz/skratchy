@@ -8,11 +8,13 @@
 <style scoped>
 img {
   height: 90vh;
+  padding: 50px;
 }
 @media only screen and (max-width: 768px){
   img {
     width: 100%;
     height: 100%;
+    padding: 0;
   }
 }
 </style>

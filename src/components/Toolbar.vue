@@ -56,7 +56,7 @@ export default {
         {
           name: "linkedin",
           image: require("../assets/icons/linked-in-logo.png"),
-          url: "https://www.instagram.com/___skratchy___/"
+          url: "https://fr.linkedin.com/in/clara-delahaye-746055120"
         }
       ]
     };
@@ -122,6 +122,9 @@ export default {
 
 .navbar li {
   margin-right: 20px;
+}
+.logo{
+  padding-top: 4px;
 }
 
 .fade-enter-active,
@@ -196,9 +199,9 @@ export default {
 }
 
 .about .name-title {
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  font-size: 25px;
   margin-top: 72px;
 }
 
@@ -212,13 +215,15 @@ export default {
 
 .about a.send-email {
   color: white;
-  padding-left: 40px;
-  background-color: gray;
-  padding-right: 40px;
-  padding: 1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  width: 10%;
+    padding-left: 40px;
+    background-color: gray;
+    padding-right: 40px;
+    padding: 10px 27px;
+    border-radius: 40px;
+    text-transform: lowercase;
+    text-decoration: none;
+    width: 10%;
+    font-size: 14px;
 }
 
 .about ul.social-networks-list {
@@ -247,7 +252,7 @@ export default {
 
 .about .email-button {
   position: absolute;
-  bottom: 150px;
+  bottom: 125px;
   width: 100%;
 }
 

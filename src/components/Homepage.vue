@@ -6,31 +6,31 @@
       <div class="left-arts arts-block">
         <router-link to="/illustration">
           <div class="illustrations art-block">
-            <h3>illustrations</h3>
+            <h3>Illustration</h3>
           </div>
         </router-link>
         <router-link to="/graphism">
           <div class="graphism art-block">
-            <h3>arts graphiques</h3>
+            <h3>Graphism</h3>
           </div>
         </router-link>
       </div>
       <div class="center-art arts-block">
           <router-link to="/licence-project">
             <div class="licence-project art-block">
-              <h3>projet de licence</h3>
+              <h3>Licence Project</h3>
             </div>
           </router-link>
       </div>
       <div class="right-arts arts-block">
         <router-link to="/photography">
           <div class="photography art-block">
-            <h3>photographies</h3>
+            <h3>Photography</h3>
           </div>
         </router-link>
         <router-link to="/typography">
           <div class="typography art-block">
-            <h3>typographie</h3>
+            <h3>Typography</h3>
           </div>
         </router-link>
       </div>
@@ -72,14 +72,18 @@ export default {
 
 <style scoped>
 h1.name-title {
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  font-size: 25px;
   margin-top: 0;
 }
 .homepage-content {
   padding-top: 20px;
   position: relative;
+}
+.homepage-content h3{
+  font-size: 15px;
+  font-weight: 300;
 }
 .art-grid{
   position: absolute;

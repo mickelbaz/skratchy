@@ -14,11 +14,23 @@ export default {
 
 <style scoped>
 img {
-  width: 100%;
-  height: 100%;
+  height: 85vh;
+  padding: 20px;
 }
 img.beer-logo{
     margin-top: 20px;
-    width: 40%;
+    height: 45vh;
+}
+@media only screen and (max-width: 768px){
+  img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  img.beer-logo{
+    margin-top: 20px;
+    height: auto;
+    width: 50%;
+}
 }
 </style>

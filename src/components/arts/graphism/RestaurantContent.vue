@@ -1,7 +1,7 @@
 <template>
   <div class="restaurant-content">
-    <img src="../../../assets/graphism/restaurant/pattern-full.jpg" alt="Pattern Full">
     <img src="../../../assets/graphism/restaurant/mockup.jpg" alt="mock up">
+    <img src="../../../assets/graphism/restaurant/pattern-full.jpg" alt="Pattern Full">
   </div>
 </template>
 

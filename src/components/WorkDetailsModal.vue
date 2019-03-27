@@ -12,7 +12,6 @@
                     <h3 class="work-type">Work type</h3>
                     <h1 class="work-name">Work name</h1>
                 </slot>
-                <hr>
               </div>
           </div>
 
@@ -97,7 +96,7 @@ export default {
 .content-text{
     padding: 15px 30px 20px;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .modal-header {
@@ -107,7 +106,7 @@ export default {
 
 .modal-header h1.work-name {
   margin-top: 0;
-  font-size: 3em;
+  font-size: 14px;
 }
 
 .modal-header h3.work-type {
@@ -115,14 +114,6 @@ export default {
   text-transform: uppercase;
   letter-spacing: .11em;
   font-size: 15px;
-}
-hr{
-    color: #494a4d;
-    background-color: #494a4d;
-    height: 1px;
-    border: 0;
-    margin-bottom: 15px;
-    width: 100%;
 }
 
 .modal-body {
@@ -193,10 +184,12 @@ hr{
 .modal-container.basalte,
 .modal-container.moma,
 .modal-container.liberty-bell,
-.modal-container.pepito{
+.modal-container.pepito,
+.modal-container.benetton{
   background-color: white;
 }
-.modal-container.logo-creation{
+.modal-container.logo-creation,
+.modal-container.cherry{
   background-color: black;
 }
 .la-boom .back-button{
@@ -219,12 +212,16 @@ hr{
   color: rgb(37, 43, 130);
 }
 .moma .back-button,
-.wad-mag .back-button{
+.wad-mag .back-button,
+.benetton .back-button,
+.liberty-bell .back-button{
   background-color: black;
   color: white;
 }
 .moma .back-button:hover,
-.wad-mag .back-button:hover{
+.wad-mag .back-button:hover,
+.benetton .back-button:hover,
+.liberty-bell .back-button:hover{
   background-color: rgba(0, 0, 0, .7);
   color: white;
 }
